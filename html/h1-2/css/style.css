@@ -1,0 +1,30 @@
+.header,
+.name,
+.info{
+    text-align: center;
+}
+.picture{
+    height: 25%;
+    width: 17%;
+}
+.work{
+    line-height: 200%;
+    margin-left: 110px;
+}
+.line{
+    width: 940px;
+
+}
+#feedback{
+    margin-left: 110px;
+}
+.since{
+    margin-left: 110px;
+}
+
+/*
+.content{
+    border-bottom: 1px solid black;
+}*/
+
+
