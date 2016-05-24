@@ -9,12 +9,33 @@ body{
 }
 .wrapper{
     background: white;
-    padding-left: 150px;
-    padding-right: 130px;
+    margin-left: 150px;
+    margin-right: 130px;
     width: 1000px;
-    margin: 0 auto;
 }
 .header{
     width: 1000px;
+    height: 237px;
     margin: 0 auto;
+    clear: both;
+}
+/*.asia{*/
+    /*width: 280px;*/
+    /*height: 160px;*/
+    /*background: url(../img/asia.png) no-repeat;*/
+    /*padding-top: 73px;*/
+    /*padding-left: 30px;*/
+/*}*/
+.asia p{
+    float: left;
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    color: #71aec1;
+    display: block;
+    width: 280px;
+    height: 160px;
+    text-align: center;
+    background: url(../img/asia.png) no-repeat;
+    padding-top: 85px;
+    /*padding-left: 30px;*/
 }
