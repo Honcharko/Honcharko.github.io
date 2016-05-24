@@ -9,23 +9,15 @@ body{
 }
 .wrapper{
     background: white;
-    margin-left: 150px;
-    margin-right: 130px;
     width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .header{
     width: 1000px;
     height: 237px;
     margin: 0 auto;
-    clear: both;
 }
-/*.asia{*/
-    /*width: 280px;*/
-    /*height: 160px;*/
-    /*background: url(../img/asia.png) no-repeat;*/
-    /*padding-top: 73px;*/
-    /*padding-left: 30px;*/
-/*}*/
 .asia p{
     float: left;
     font-family: Tahoma, sans-serif;
@@ -36,6 +28,38 @@ body{
     height: 160px;
     text-align: center;
     background: url(../img/asia.png) no-repeat;
-    padding-top: 85px;
-    /*padding-left: 30px;*/
+    padding-top: 100px;
+    margin: 73px 30px;
+}
+.text{
+    float: right;
+     padding: 10px 30px;
+}
+.text span{
+    font-family: Regular, Tahoma,sans-serif;
+    display: block;
+    line-height: 27px;
+    color: #4ea8bd;
+}
+.text .mail a{
+    text-decoration: none;
+    color: #4ea8bd;
+}
+.main{
+    font-weight: bold;
+}
+.flags{
+    float: right;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    width: 335px;
+    padding: 200px 35px 5px 0;
+}
+.countries li{
+    float: left;
+    list-style: none;
+}
+.countries li a{
+
 }
