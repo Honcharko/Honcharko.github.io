@@ -172,7 +172,7 @@ ul.menu > li:hover > ul.submenu {
 }
 .right{
     width: 210px;
-    float: left;
+    float: right;
     /*text-align: center;*/
     /*border-left:1px solid #c7cacf;*/
 }
