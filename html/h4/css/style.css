@@ -156,25 +156,25 @@ ul.menu > li:hover > ul.submenu {
 }
 .fon{
     width: 1000px;
-    background: #edeef0;
+    background: url(../img/fon.png) repeat-y;
     float: left;
 }
 .left{
     width: 210px;
     float: left;
-    text-align: center;
-    border-right:1px solid #c7cacf;
+    /*text-align: center;*/
+    /*border-right:1px solid #c7cacf;*/
 }
 .central{
     width: 580px;
     float: left;
-    color: white;
+    /*color: white;*/
 }
 .right{
     width: 210px;
-    float: right;
-    text-align: center;
-    border-left:1px solid #c7cacf;
+    float: left;
+    /*text-align: center;*/
+    /*border-left:1px solid #c7cacf;*/
 }
 .footer{
     text-align: center;
