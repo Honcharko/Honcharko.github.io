@@ -53,23 +53,30 @@ body{
     float: right;
     position: relative;
     overflow: hidden;
-    height: 37px;
+    height: 72px;
     /*width: 335px;*/
-    padding: 68px 35px 5px 0;
+    padding: 30px 35px 5px 0;
 }
 .countries li{
     float: left;
     list-style: none;
+    text-align: center;
+    padding: 10px 0;
 }
 .countries li a{
+    font-family: Tahoma, Aeial, sans-serif;
+    font-size: 10px;
+    color: #90c8d6;
     display: block;
-    padding:0 10px;
-    line-height: 40px;
+    padding:0 16px;
+    line-height: 20px;
 }
+
 .content{
     clear: both;
 }
 .positions{
+    width: 1000px;
     float: left;
 }
 .menu{
