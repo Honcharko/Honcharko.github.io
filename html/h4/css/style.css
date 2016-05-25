@@ -8,13 +8,17 @@ body{
     width: 100%;
 }
 .wrapper{
-    background: white;
     width: 1000px;
+    height: 918px;
     margin-left: auto;
     margin-right: auto;
     clear: both;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.68);
 }
 .header{
+    background: white;
     width: 1000px;
     height: 237px;
     margin: 0 auto;
@@ -53,7 +57,7 @@ body{
     float: right;
     position: relative;
     overflow: hidden;
-    height: 72px;
+    height: 60px;
     /*width: 335px;*/
     padding: 30px 35px 5px 0;
 }
@@ -61,25 +65,121 @@ body{
     float: left;
     list-style: none;
     text-align: center;
-    padding: 10px 0;
+    /*padding: 25px 0;*/
 }
 .countries li a{
     font-family: Tahoma, Aeial, sans-serif;
     font-size: 10px;
     color: #90c8d6;
     display: block;
-    padding:0 16px;
-    line-height: 20px;
+    padding:43px 26px 10px 6px;
 }
-
+.india{
+    background:url(../img/india.png);
+    background-repeat: no-repeat;
+}
+.nepal{
+    background:url(../img/nepal.png);
+    background-repeat: no-repeat;
+}
+.tibet{
+    background:url(../img/tibet.png);
+    background-repeat: no-repeat;
+}
+.butan{
+    background:url(../img/butan.png);
+    background-repeat: no-repeat;
+}
+.sl{
+    background:url(../img/shri-lanka.png);
+    background-repeat: no-repeat;
+}
+.maldives{
+    background:url(../img/maldives.png);
+    background-repeat: no-repeat;
+}
 .content{
     clear: both;
 }
+.photo{
+    border-top:1px solid #128aa7;
+    border-bottom: 1px solid #128aa7;
+}
 .positions{
     width: 1000px;
-    float: left;
 }
 .menu{
+    width: 1000px;
+    height: 30px;
     list-style: none;
     display: block;
+    background: #333333;
+}
+.menu li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 0 33px;
+    line-height: 25px;
+    display: block;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 107px;
+    top: 30px;
+    left: 0;
+    background-color: #333333;
+    border: 1px solid black;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 5px;
+    color: white;
+    background-color: #333333;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+.fon{
+    width: 1000px;
+    background: #edeef0;
+    float: left;
+}
+.left{
+    width: 210px;
+    float: left;
+    text-align: center;
+    border-right:1px solid #c7cacf;
+}
+.central{
+    width: 580px;
+    float: left;
+    color: white;
+}
+.right{
+    width: 210px;
+    float: right;
+    text-align: center;
+    border-left:1px solid #c7cacf;
+}
+.footer{
+    text-align: center;
+    margin-top: 430px;
+    margin-bottom: 20px;
+    color: #7da8c1;
+    font: 12px Tahoma, Arial, sans-serif;
 }
