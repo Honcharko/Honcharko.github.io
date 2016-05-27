@@ -9,19 +9,19 @@ body{
 }
 .wrapper{
     width: 1000px;
-    height: 918px;
+    height: 1060px;
     margin-left: auto;
     margin-right: auto;
     clear: both;
-    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.68);
-    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.68);
-    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.68);
 }
 .header{
     background: white;
     width: 1000px;
-    height: 237px;
+    height: 213px;
     margin: 0 auto;
+    webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 }
 .asia p{
     float: left;
@@ -34,16 +34,17 @@ body{
     text-align: center;
     background: url(../img/asia.png) no-repeat;
     padding-top: 100px;
-    margin: 72px 30px 0;
+    margin: 48px 0 0 30px;
 }
 .text{
     float: right;
      padding: 10px 30px;
+    font-size: 12px;
 }
 .text span{
     font-family: Regular, Tahoma,sans-serif;
     display: block;
-    line-height: 27px;
+    line-height: 25px;
     color: #4ea8bd;
 }
 .text .mail a{
@@ -58,14 +59,13 @@ body{
     position: relative;
     overflow: hidden;
     height: 60px;
-    /*width: 335px;*/
     padding: 30px 35px 5px 0;
+    margin: 116px -178px 0 0;
 }
 .countries li{
     float: left;
     list-style: none;
     text-align: center;
-    /*padding: 25px 0;*/
 }
 .countries li a{
     font-family: Tahoma, Aeial, sans-serif;
@@ -100,17 +100,24 @@ body{
 }
 .content{
     clear: both;
+    width: 1000px;
+    height: 812px;
+    webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 }
 .photo{
+    height: 237px;
     border-top:1px solid #128aa7;
     border-bottom: 1px solid #128aa7;
 }
 .positions{
+    height: 28px;
     width: 1000px;
 }
 .menu{
     width: 1000px;
-    height: 30px;
+    height: 28px;
     list-style: none;
     display: block;
     background: #333333;
@@ -130,13 +137,21 @@ body{
     font-size: 14px;
 }
 ul.submenu {
+    font-family: Tahoma, Arial, sans-serif;
     display: none;
     position: absolute;
-    width: 107px;
-    top: 30px;
-    left: 0;
+    width: 150px;
     background-color: #333333;
     border: 1px solid black;
+    webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+li.submenu_1{
+    width: 128px;
+}
+li.submenu_2{
+    width: 115px;
 }
 ul.submenu > li {
     display: block;
@@ -155,9 +170,20 @@ ul.menu > li:hover > ul.submenu {
     display: block;
 }
 .fon{
+    font: 14px Tahoma;
+    color: #535b54;
     width: 1000px;
+    height: 546px;
     background: url(../img/fon.jpg) repeat-y;
     float: left;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.fon h2{
+    font-family: Tahoma, Arial, sans-serif;
+    color: #535b54;
+    font-size: 18px;
 }
 .left{
     width: 210px;
@@ -174,11 +200,13 @@ ul.menu > li:hover > ul.submenu {
     text-align: center;
 }
 .footer{
+    height: 35px;
     text-align: center;
-    margin-top: 430px;
-    margin-bottom: 20px;
     color: #7da8c1;
     font: 12px Tahoma, Arial, sans-serif;
+}
+.footer p{
+    padding-top: 12px;
 }
 .right,
 .left{
