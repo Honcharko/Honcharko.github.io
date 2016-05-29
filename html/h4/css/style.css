@@ -119,6 +119,7 @@ li.weight a.sl{
 .positions{
     height: 28px;
     width: 1000px;
+    position: relative;
     webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
