@@ -2,9 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework 5</title>
 </head>
 <body>
-
+        <div class="wrapper">
+            <div class="header">
+                    <div class="right">
+                        <ul class="menu">
+                            <li><a class="other" href="#">Meu YouBike</a></li>
+                            <li><a class="other" href="#">Vender</a></li>
+                            <li><a class="other" href="#">Forum</a></li>
+                            <li><a class="other" href="#">Contato</a></li>
+                            <li><a class="other" href="#">Ajuda</></li>
+                            <li class="active"><a href="#">Minhas Ofertas<img src="./img/flag.png" alt="flag"></a></li>
+                            <li class="active"><a class="under" href="#">Ola! <span>Entrar</span> ou <span>Cadastre-se</span></a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="head">
+                        <p>Cadastre-se</p>
+                    </div>
+                        <div class="facebook">
+                            <div class="left">
+                                <form action="/http://facebook.com/">
+                                    <button type="submit"><b>f</b></button>
+                                </form>
+                            </div>
+                                    <div class="login">
+                                        <form action="/http://facebook.com/" method="get">
+                                            <button type="submit"><b>Log In</b> with <b>Facebook</b>&nbsp;&nbsp;&nbsp;&nbsp;&gt;</button>
+                                        </form>
+                                </div>
+                        </div>
+                            <div class="text">
+                                <p>OU</p>
+                            </div>
+                                <div class="info">
+                                    <form action="/">
+                                        <input class="main" type="text" name="firstname" placeholder="First Name" required>
+                                        <input class="main" type="text" name="lastname" placeholder="Last Name" required>
+                                        <input class="main" type="email" name="email" placeholder="Email"  required>
+                                        <input class="main" type="password" name="password" placeholder=" Choose Password" required>
+                                        <input class="main" type="password" name="password confirm" placeholder="Password Confirm" required>
+                                    </form>
+                                </div>
+                                    <div class="check">
+                                        <form action="/">
+                                            <input type="checkbox" name="youbike" id="youbike">
+                                            <label for="youbike">Send me Youbike updates and tips</label>
+                                        </form>
+                                    </div>
+                                        <div class="account">
+                                            <form action="/">
+                                                <button type="submit">Create my Account</button>
+                                            </form>
+                                        </div>
+                                            <div class="foot">
+                                                <span>By clicking the button above, you agree to the Terms of Servise</span>
+                                                <span>Xiew our Privacy Policy</span>
+                                            </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
