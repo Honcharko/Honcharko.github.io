@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    border-collapse: collapse;
+    width: 500px;
+    height: 550px;
+    margin: 0 auto;
+}
+tr.head{
+    height: 45px;
+    width: 100%;
+}
+tr.one{
+    height: 135px;
+    width: 100%;
+}
+tr.two{
+    height: 125px;
+    width: 100%;
+}
+tr.three{
+    height: 65px;
+    width: 100%;
+}
+tr.four{
+    height: 65px;
+    width: 100%;
+}
+tr.five{
+    height: 40px;
+    width: 100%;
+}
+tr.six{
+    height: 30px;
+    width: 100%;
+}
+th,
+td{
+    margin: 0;
+    padding: 0;
+    border: 9px solid black;
+}
+tr.head{
+    height: 45px;
+}
+tr.head th:nth-child(3){
+   background: yellow;
+}
+tr.one td:nth-child(2){
+    background: red;
+}
+tr.one td:nth-child(3){
+    background: yellow;
+}
+tr.free td:nth-child(1),
+tr.free td:nth-child(2){
+    background: black;
+}
+tr.four td:nth-child(2),
+tr.four td:nth-child(3){
+    background: black;
+}
+tr.four td:nth-child(5){
+    background: blue;
+}
+tr.four td:first-child{
+    background: yellow;
+}
+tr.five td:nth-child(2) {
+    background: black;
+}
+tr.five td:nth-child(3) {
+    background: black;
+}
