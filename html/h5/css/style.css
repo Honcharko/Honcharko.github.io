@@ -169,6 +169,7 @@ li.active a.under:hover span{
     border-bottom:none;
     border-color: #7b8ab5;
     border-radius: 0 5px 5px 0;
+    cursor: pointer;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b5798+50,2d4478+50,2f447b+51,2f447b+100 */
     background: rgb(59,87,152); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(59,87,152,1) 50%, rgba(45,68,120,1) 50%, rgba(47,68,123,1) 51%, rgba(47,68,123,1) 100%); /* FF3.6-15 */
@@ -182,12 +183,12 @@ li.active a.under:hover span{
     height: 35px;
     width: 275px;
     background-color: #0f0e0e;
-    border-top: none;
+    border-top: 1px solid transparent;
     border-bottom: 1px solid #4a4948;
-    border-right: none;
-    border-left: none;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
 }
-.info form input:hover{
+.info form input:focus{
     color: white;
     font-family: 'Helvetica Neue Regular', Tahoma, sans-serif;
     background-color: #1b5288;
