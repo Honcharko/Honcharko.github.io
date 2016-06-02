@@ -132,11 +132,13 @@ li.weight a.sl{
     background: #333333;
 }
 .menu li{
+    height: 28px;
     float: left;
     list-style: none;
     position: relative;
 }
 .menu a{
+    height: 28px;
     color: white;
     text-decoration: none;
     padding: 0 33px;
@@ -167,7 +169,7 @@ ul.submenu > li {
 }
 ul.submenu > li > a {
     display: block;
-    padding: 5px;
+    padding: 0 0 0 5px;
     color: white;
     background-color: #333333;
     text-decoration: none;
