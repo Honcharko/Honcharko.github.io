@@ -5,7 +5,7 @@
 .wrapper{
     margin-left: auto;
     margin-right: auto;
-    width: 908px;
+    width: 910px;
     height: 1295px;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,11 +14,13 @@ header{
     padding-top: 15px;
     width: 100%;
     clear: both;
+    position: relative;
+    overflow: hidden;
 }
 .phone{
     width: auto;
     float: left;
-    margin-left: -7px;
+    /*margin-left: -7px;*/
 }
 .phone img{
     float: left;
@@ -107,7 +109,7 @@ a.forgot{
 }
 .foto{
     float: left;
-    margin-left: -16px;
+    /*margin-left: -16px;*/
     width: 908px;
     height: 237px;
     background: url(../img/foto.png) no-repeat;
@@ -120,17 +122,327 @@ a.forgot{
 }
 main{
     width: 100%;
+    position: relative;
+    padding-top: 6px;
+}
+.menu{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(to bottom, #4d5663, #050506);
+    border-radius: 4px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
 }
 ul.mainMenu li{
-    padding-top: 6px;
     float: left;
     list-style: none;
 }
 .mainMenu li a{
+    font-family: Lucida Sans Unicode, Arial, sans-serif;
     text-decoration: none;
     display: block;
     font-size: 13.64px;
     line-height: 33px;
-    padding: 0 30px;
-    background: beige;
+    padding: 0 17px;
+    color: #b1bcc0;
+}
+.mainMenu li a:hover{
+    background: linear-gradient(to bottom, #1f6787, #0d365a);
+    color: #ffffff;
+    border-radius: 16px;
+}
+ul.mainMenu li:first-child{
+    padding-left: 109px;
+}
+.box{
+    display: block;
+    float: right;
+    padding-right: 29px;
+}
+.menu span{
+    padding: 0 5px;
+    float: left;
+    font-size: 11px;
+    color: #6b7275;
+    line-height: 32px;
+}
+span.color{
+    color: #0f4c77;
+}
+.box a{
+    float: left;
+    padding-top: 8px;
+}
+.blocks{
+    width: 100%;
+    height: 130px;
+    padding-top: 13px;
+
+}
+.left_block{
+    width: 413px;
+    height: 130px;
+    border: 1px solid #bebdbc;
+    border-radius: 20px;
+    float: left;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+.center{
+    width: 190px;
+    height: 130px;
+    border: 1px solid #bebdbc;
+    border-radius: 20px;
+    float: left;
+    margin-left: 10px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+.right{
+    width: 266px;
+    height: 130px;
+    float: left;
+    border: 1px solid #bebdbc;
+    border-radius: 20px;
+    margin-left: 11px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+.content{
+    width: 100%;
+}
+.left{
+    width: 180px;
+    float: left;
+    padding-top: 20px;
+
+}
+.left p.catalog{
+    font-size: 12px;
+    display: block;
+    width: 155px;
+    height: 27px;
+    padding: 7px 0 0 32px;
+    background: url("../img/product.png") no-repeat;
+}
+p.tyres{
+    font-size: 12px;
+    display: block;
+    width: 150px;
+    height: 20px;
+    padding: 14px 0 0 32px;
+    background: url("../img/tyres.png") no-repeat;
+    background-position: 0 6px;
+}
+.left a{
+    display: block;
+    width: 113px;
+    height: 14px;
+    padding: 1px 0 0 10px;
+    margin: 9px 0 0 28px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #465961;
+    background: url("../img/point.png") no-repeat;
+    background-position-y: 4px;
+}
+.left a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+p.discs,
+p.bolts{
+    font-size: 12px;
+    display: block;
+    width: 150px;
+    height: 20px;
+    padding: 14px 0 0 32px;
+    background: url("../img/tyres.png") no-repeat;
+    background-position: 0 6px;
+}
+.products{
+    width: 526px;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    background: linear-gradient( to bottom, #e4e6e8, #93a7b0);
+}
+.l_item
+{
+    float: left;
+    width: 140px;
+    height: 180px;
+    text-align: center;
+    margin: 9px 15px;
+}
+.c_item{
+    float: left;
+    width: 140px;
+    height: 180px;
+    text-align: center;
+    margin: 9px 15px;
+}
+.r_item{
+    float: left;
+    width: 140px;
+    height: 180px;
+    text-align: center;
+    margin: 11px 16px;
+}
+p.l_item_name,
+p.c_item_name,
+p.r_item_name{
+    color: #206988;
+    font-size: 15px;
+}
+.l_item_model,
+.c_item_model,
+.r_item_model{
+    height: 17px;
+    font-size: 12px;
+}
+.l_image,
+.c_image,
+.r_image{
+    text-align: center;
+    display: table;
+    width: 140px;
+    height: 129px;
+    background: url("../img/white.png") no-repeat;
+}
+.l_image a,
+.c_image a,
+.r_image a{
+    height: 123px;
+}
+.l_image img,
+.c_image img,
+.r_image img{
+    padding-top: 4px;
+}
+p.price{
+    margin-top: 5px;
+    color: #114165;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
+}
+.right_content{
+    float: left;
+    width: 180px;
+    height: auto;
+    padding-top: 20px;
+}
+.right_content .brands{
+    font-size: 12px;
+    display: block;
+    width: 155px;
+    height: 27px;
+    padding: 7px 0 0 32px;
+    background: url("../img/product.png") no-repeat;
+    margin-left: 8px;
+}
+.tyres_r {
+    font-size: 12px;
+    display: block;
+    width: 150px;
+    height: 24px;
+    padding: 14px 0 0 32px;
+    background: url("../img/tyres.png") no-repeat;
+    background-position: 0 6px;
+    margin-left: 16px;
+}
+.discs_r{
+    font-size: 12px;
+    display: block;
+    width: 150px;
+    height: 30px;
+    padding: 14px 0 0 32px;
+    background: url("../img/tyres.png") no-repeat;
+    background-position: 0 6px;
+    margin-left: 16px;
+}
+.right_content form input{
+    float: left;
+    margin-left: 26px;
+    margin-top: 5px;
+
+
+}
+.right_content label{
+    font-size: 12px;
+    padding-left: 15px;
+    color: #5f6f76;
+}
+.right_content form{
+    height: 74px;
+}
+.brand_1,
+.brand_2,
+.brand_3,
+.brand_4,
+.brand_5,
+.brand_6{
+    margin-top: 1px;
+    margin-bottom: 6px;
+}
+form button{
+    height: 28px;
+    width: 80px;
+    background: linear-gradient(to bottom, #1e6383, #0e385d);
+    color: #e5e9ea;
+    border: none;
+    border-radius: 8px;
+    margin-left: 30px;
+    margin-top: 9px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+
+}
+.logo img{
+    width: 675px;
+    padding-top: 56px;
+    padding-left: 110px;
+}
+footer {
+    margin-top: 23px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background: #213a4d;
+    position: relative;
+
+}
+footer ul li{
+    float: left;
+    list-style: none;
+    padding-top: 8px;
+}
+footer a{
+    text-decoration: none;
+    padding: 0 14px;
+    display: block;
+    color: #bec6c9;
+    font-size: 12px;
+}
+footer a.comp{
+    padding-left: 300px;
+}
+footer li a{
+    border-right: 1px solid #8d989f;
+}
+footer li a.last{
+    border: none;
+}
+footer a:hover{
+    color: #4d9fbd;
+}
+footer p{
+    display: block;
+    padding-top: 35px;
+    padding-right: 23px;
+    text-align: center;
+    font-size: 11px;
+    color: #7f4740;
 }
