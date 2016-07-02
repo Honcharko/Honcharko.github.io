@@ -8,10 +8,10 @@ function pow(base, exp){
 }
 var num = +prompt("Введите число :"," ");
 var ex = +prompt("Введите степень :"," ");
-    if(typeof (num) !== "number" && typeof (ex) !== "number") {
+    if(isNaN(num) || isNaN(ex)) {
         alert("Введите числовое значение!");
     }else if(Number.isInteger(num) && Number.isInteger(ex)){
-        console.log(pow(num,ex));
+        console.log("result: "+ pow(num,ex));
         }else{
             alert("Введите целое число");
         }

@@ -1,9 +1,9 @@
-@media only screen and (max-width: 768px){
+@media (max-width: 959px){
 .logo{
     height: 0;
     padding-top: 59px;
 }
-.menu{
+    .menu{
     width: 100%;
     float: left;
     padding-top: 80px;
@@ -130,7 +130,11 @@ footer nav{
 }
 }
             /*Screen 480px*/
-@media only screen and (max-width: 480px){
+@media(max-width: 767px){
+body{
+    background: url("../img/background.jpg") no-repeat;
+    background-position: top center;
+}
 .logo a{
     margin-left: 145px;
 }
@@ -140,7 +144,7 @@ header{
 }
 .menu{
     float: none;
-    height: 260px;
+    height: 40px;
     width: 246px;
     position: absolute;
     padding-top: 0;
@@ -150,10 +154,12 @@ header{
     border: 1px solid transparent;
     z-index: 1;
 }
+.menu:hover{
+    border-radius:8px 8px 0 0;
+}
 .menu__item{
     float: none;
     padding-top: 11px;
-    border-bottom: 1px solid #523e5a;
     text-align: center;
 }
 .menu__item:last-child{
@@ -177,6 +183,37 @@ nav{
     height: 270px;
     padding-right: 136px;
     padding-top: 68px;
+}
+.menu .menu__item:nth-child(2),
+.menu .menu__item:nth-child(3),
+.menu .menu__item:nth-child(4),
+.menu .menu__item:nth-child(5),
+.menu .menu__item:nth-child(6){
+    display: none;
+}
+.menu .menu__item:hover > .menu__submenu {
+    display: block;
+    list-style: none;
+    height: 220px;
+    width: 245px;
+    background:  rgba(61,49,70,0.8);
+    border-radius: 0 0 8px 8px;
+    border: 1px solid transparent;
+}
+.menu__submenu__link{
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+.menu__submenu__link{
+    border: 1px solid transparent;
+}
+.menu__submenu__item{
+    padding-top: 11px;
+    border-bottom: 1px solid #523e5a;
+}
+.menu__submenu__item:hover{
+    border-bottom: 2px solid #edbfff;
 }
 .info{
     position: absolute;
@@ -221,6 +258,7 @@ nav{
 .about{
     margin-top: 34px;
     margin-left: 11px;
+    background: linear-gradient(to bottom, #724e80, #37283e);
 }
 .about__left{
     width: 423px;
@@ -280,14 +318,26 @@ margin-right: 0;
 .brands{
     height: 345px;
 }
-.brands__logo {
-    height: 160px;
-    /*margin-top: 126px;*/
-    background-size: 723px;
-    margin-left: 50px;
-    margin-top: 37px;
-    width: 329px;
-    background: url("../img/logo_480.png")no-repeat;
+/*.brands__logo {*/
+    /*height: 160px;*/
+    /*!*margin-top: 126px;*!*/
+    /*background-size: 723px;*/
+    /*margin-left: 50px;*/
+    /*margin-top: 37px;*/
+    /*width: 329px;*/
+    /*background: url("../img/logo_480.png")no-repeat;*/
+/*}*/
+.brands__logo4 {
+     float: left;
+     clear: both;
+     display: block;
+     position: relative;
+     overflow: hidden;
+     width: 72px;
+     height: 63px;
+     margin-top: 24px;
+     margin-left: 86px;
+     background: url("../img/b4.png") no-repeat;
 }
 .comments{
     height: 588px;
@@ -359,7 +409,7 @@ footer nav{
 }
 }
 /*Screen 320px*/
-@media only screen and (max-width: 320px){
+@media(max-width: 479px){
 .logo a{
     margin-left: 85px;
 }
@@ -380,6 +430,18 @@ nav{
 .menu .menu__item:nth-child(5),
 .menu .menu__item:nth-child(6){
     display: none;
+}
+.menu .menu__item:hover > .menu__submenu{
+    display: block;
+    font-size: 19px;
+}
+.menu__submenu .menu__submenu__link{
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+}  
+.menu__submenu .menu__submenu__link:hover{
+    border-bottom: 2px solid #edbfff;
 }
 .menu{
     background: none;
