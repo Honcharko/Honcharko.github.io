@@ -8,15 +8,13 @@ function pow(base, exp){
 }
 var num = +prompt("Введите число :"," ");
 var ex = +prompt("Введите степень :"," ");
-    if(typeof (num) == "number" && typeof (ex) == "number"){
-        if(Number.isInteger(num) && Number.isInteger(ex)){
+    if(typeof (num) !== "number" && typeof (ex) !== "number") {
+        alert("Введите числовое значение!");
+    }else if(Number.isInteger(num) && Number.isInteger(ex)){
         console.log(pow(num,ex));
         }else{
-            alert("Не число");
+            alert("Введите целое число");
         }
-    }else{
-        alert("Введите число!");
-    }
     //Task 2
 var arr =[];
 for(var i = 0; i < 5; i++){
@@ -27,9 +25,12 @@ for(var i = 0; i < 5; i++){
 var secondName = prompt("Введите имя","");
 for (var i = 0;i < arr.length; i++){
     if(secondName  == arr[i]){
-        alert(secondName + ", Вы успешно вошли!");
-    }else{
-        alert("Такого имени нет!");
+        var nameArr = secondName;
     }
+}
+if(secondName  == nameArr){
+    alert(nameArr + ", Вы успешно вошли!");
+}else{
+    alert("Увы, Такого имени нет!");
 }
 
