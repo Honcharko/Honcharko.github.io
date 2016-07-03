@@ -215,6 +215,7 @@ nav{
 .menu__submenu__item:hover{
     border-bottom: 2px solid #edbfff;
 }
+
 .info{
     position: absolute;
 }
@@ -443,6 +444,20 @@ nav{
 .menu__submenu .menu__submenu__link:hover{
     border-bottom: 2px solid #edbfff;
 }
+.menu .menu__item:hover > .menu__submenu {
+    display: block;
+    list-style: none;
+    height: 220px;
+    width: 80px;
+    margin-left: 80px;
+    background: none;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid transparent;
+}
+.menu__submenu__item {
+    padding-top: 11px;
+    border-bottom: 1px solid transparent;
+}
 .menu{
     background: none;
     height: 60px;
@@ -529,9 +544,85 @@ nav{
     background: url("../img/logo_320.png")no-repeat;
     height: 360px;
 }
-.brands{
-    height: 430px;
-}
+    .brands{
+        clear: both;
+        position: relative;
+        overflow: hidden;
+        width: 50%;
+        margin-left: 38px;
+        height: auto;
+        border-top: 1px solid #e6e6e6;
+    }
+    .brands__logo1 {
+        float: left;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        width: 72px;
+        height: 63px;
+        margin-top: 24px;
+        margin-left: 94px;
+        background: url("../img/b1.png") no-repeat;
+    }
+    .brands__logo2 {
+        float: left;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        width: 72px;
+        height: 63px;
+        margin-top: 22px;
+        margin-left: 63px;
+        background: url("../img/b2.png") no-repeat;
+    }
+    .brands__logo3 {
+        float: left;
+        clear: both;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        width: 72px;
+        height: 63px;
+        margin-top: 22px;
+        margin-left: 94px;
+        background: url("../img/b3.png") no-repeat;
+    }
+    .brands__logo4 {
+        float: right;
+        /* clear: both; */
+        display: block;
+        position: relative;
+        overflow: hidden;
+        width: 72px;
+        height: 63px;
+        margin-top: -57px;
+        margin-right: 173px;
+        background: url("../img/b4.png") no-repeat;
+    }
+    .brands__logo5 {
+        float: left;
+        clear: both;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        width: 104px;
+        height: 63px;
+        margin-top: 42px;
+        margin-left: 75px;
+        background: url("../img/b5.png") no-repeat;
+    }
+    .brands__logo6 {
+        /* clear: both; */
+        position: relative;
+        overflow: hidden;
+        display: block;
+        float: left;
+        width: 72px;
+        height: 63px;
+        margin-top: 25px;
+        margin-left: 36px;
+        background: url("../img/b6.png") no-repeat;
+    }
 .comments{
     display: none;
 }
