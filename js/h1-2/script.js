@@ -33,4 +33,3 @@ if(secondName  == nameArr){
 }else{
     alert("Увы, Такого имени нет!");
 }
-
