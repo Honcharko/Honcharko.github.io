@@ -1,0 +1,39 @@
+#start,
+#clear
+{
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+#start {
+    background: rgb(28, 184, 65);
+}
+
+#clear {
+    background: rgb(202, 60, 60);
+}
+#pause {
+    background: #3b83bc;
+}
+
+#cont{
+    background: rgb(28, 184, 65);
+
+}
+#countDisp{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bolder;
+    margin-top: 200px;
+    width: 520px;
+    height: 120px;
+    background: grey;
+    border: 3px solid black;
+    border-radius: 14px;
+}
+#textDisp{
+    text-align: center;
+}
+
