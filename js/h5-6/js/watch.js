@@ -33,7 +33,22 @@ function pauseClick(){
     clearInterval(timerId);
     lap = false;
     start.innerHTML = 'Cont...';
-    start.setAttribute('id', 'start');
+    start.setAttribute('id', 'cont');
+    cont.addEventListener('click', secondStart);
+}
+function secondStart() {
+    if(lap == false){
+        startClick();
+        var pause = document.getElementById('Pause');
+        start.addEventListener('click', secondPause);
+    }
+}
+function secondPause(){
+    clearInterval(timerId);
+    lap = false;
+    start.innerHTML = 'Cont...';
+    start.setAttribute('id', 'cont');
+    start.addEventListener('click', secondPause);
 }
 
 function clearClick(){
@@ -41,5 +56,4 @@ function clearClick(){
     lap = false;
     count = 0;
     countDisp.innerHTML = count;
-    start.textContent = 'Start';
 }
