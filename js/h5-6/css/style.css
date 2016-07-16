@@ -7,17 +7,25 @@
 }
 #start {
     background: rgb(28, 184, 65);
+    width: 150px;
+    height: 50px;
 }
 
 #clear {
     background: rgb(202, 60, 60);
+    width: 150px;
+    height: 50px;
 }
 #pause {
     background: #3b83bc;
+    width: 150px;
+    height: 50px;
 }
 
 #cont{
     background: rgb(28, 184, 65);
+    width: 150px;
+    height: 50px;
 
 }
 #countDisp{
