@@ -1,11 +1,7 @@
 var start = document.getElementById('start');
-
 var clear = document.getElementById('clear');
 
-
-
 start.addEventListener('click', startClick);
-
 clear.addEventListener('click', clearClick);
 
 var count = 0, timerId, lap = false;
@@ -25,36 +21,27 @@ function startClick(){
         lap = true;
     }
     start.innerHTML = 'Pause';
-    start.setAttribute('id', 'pause');
-    start.addEventListener('click', pauseClick);
+    if(start.innerHTML = 'Pause'){
+        start.removeEventListener('click', startClick);
+        var pause = document.getElementById('start');
+        pause.addEventListener('click', pauseClick);
+    }
 }
 
 function pauseClick(){
     clearInterval(timerId);
     lap = false;
     start.innerHTML = 'Cont...';
-    start.setAttribute('id', 'cont');
-    cont.addEventListener('click', secondStart);
-}
-function secondStart() {
-    if(lap == false){
-        startClick();
-        var pause = document.getElementById('Pause');
-        start.addEventListener('click', secondPause);
+    if(start.innerHTML = 'Cont...'){
+      var cont = document.getElementById('start');
+        cont.addEventListener('click', startClick);
     }
-}
-function secondPause(){
-    clearInterval(timerId);
-    lap = false;
-    start.innerHTML = 'Cont...';
-    start.setAttribute('id', 'cont');
-    start.addEventListener('click', secondPause);
 }
 
 function clearClick(){
     clearInterval(timerId);
     lap = false;
     count = 0;
-    countDisp.innerHTML = count;
+    countDisp.innerHTML = '<span class="time">00:00:00</span><span class="clock">0</span>';
+    start.innerHTML = 'Start';
 }
-//test
