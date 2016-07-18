@@ -9,24 +9,23 @@
     background: rgb(28, 184, 65);
     width: 150px;
     height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+    border: 5px solid black;
 }
 
 #clear {
     background: rgb(202, 60, 60);
     width: 150px;
     height: 50px;
-}
-#pause {
-    background: #3b83bc;
-    width: 150px;
-    height: 50px;
-}
-
-#cont{
-    background: rgb(28, 184, 65);
-    width: 150px;
-    height: 50px;
-
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+    border: 5px solid black;
+    margin-left: 50px;
 }
 #countDisp{
     margin: 0 auto;
@@ -43,14 +42,15 @@
 }
 #textDisp{
     text-align: center;
+    margin-top: 50px;
 }
 .time{
     display: block;
-
+    height: 90px;
 }
 .clock{
     display: block;
     font-size: 30px;
-    margin-left: 350px;
+    margin-left: 320px;
 
 }
