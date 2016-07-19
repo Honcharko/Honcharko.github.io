@@ -1,6 +1,4 @@
-var start = document.getElementById('start');
-var clear = document.getElementById('clear');
-
+(function(){
 start.addEventListener('click', startClick);
 clear.addEventListener('click', clearClick);
 
@@ -21,7 +19,6 @@ function startClick(){
             var str = hours + ':' + min + ':' + sec;
             var x = document.getElementsByClassName('time')[0];
             var y = document.getElementsByClassName('clock')[0];
-            console.log(y);
             x.innerHTML = str;
             y.innerHTML = msec;
         },10);
@@ -30,9 +27,8 @@ function startClick(){
     start.innerHTML = 'Pause';
     if(start.innerHTML = 'Pause'){
         start.removeEventListener('click', startClick);
-        var pause = document.getElementById('start');
-        pause.addEventListener('click', pauseClick);
-        pause.style.backgroundColor = '#3b83bc';
+        start.addEventListener('click', pauseClick);
+        start.style.backgroundColor = '#3b83bc';
     }
 }
 
@@ -42,9 +38,8 @@ function pauseClick(){
     lap = false;
     start.innerHTML = 'Cont...';
     if(start.innerHTML = 'Cont...'){
-      var cont = document.getElementById('start');
-        cont.style.backgroundColor = 'rgb(28, 184, 65)';
-        cont.addEventListener('click', startClick);
+        start.style.backgroundColor = 'rgb(28, 184, 65)';
+        start.addEventListener('click', startClick);
     }
 }
 
@@ -58,5 +53,5 @@ function clearClick(){
     if(start.innerHTML = 'Start'){
         start.style.backgroundColor = 'rgb(28, 184, 65)';
     }
-
 }
+})()
