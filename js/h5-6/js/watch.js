@@ -10,7 +10,8 @@ function startClick(){
     if(lap == false){
         timerId = setInterval(function(){
             count++;
-            var msec = Math.floor(count % 100);
+            var d = new Date();
+            var msec = d.getMilliseconds();
             var sec = Math.floor(count / 100) % 60;
             if(sec < 10){sec ='0' + sec;}
             var min = Math.floor(count / 6000) % 60;
@@ -54,5 +55,8 @@ function clearClick(){
     countDisp.innerHTML = '<span class="time">00:00:00</span><span class="clock">0</span>';
     start.innerHTML = 'Start';
     start.addEventListener('click', startClick);
+    if(start.innerHTML = 'Start'){
+        start.style.backgroundColor = 'rgb(28, 184, 65)';
+    }
 
 }
