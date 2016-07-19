@@ -2,7 +2,7 @@
 start.addEventListener('click', startClick);
 clear.addEventListener('click', clearClick);
 
-var count = 0, timerId, lap = false;
+let count = 0, timerId, lap = false;
 
 function startClick(){
     if(lap == false){
