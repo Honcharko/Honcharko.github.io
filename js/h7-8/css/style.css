@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tabs {
+    margin: 20px;
+    clear: both;
+    width: 430px;
+}
+.tabs li {
+    float: left;
+    display: block;
+    text-align: center;
+    list-style: none;
+    background: lightgoldenrodyellow;
+}
+.tabs li:hover{
+    background: cadetblue;
+    font-style: italic;
+}
+.tabs li a:hover{
+    color: white;
+}
+.tabs ul:first-child{
+    margin-left: 5px;
+}
+.tabs li a{
+    padding: 17px;
+    height: 15px;
+    width: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    display: block;
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 8px;
+}
+.textF,
+.textS,
+.textT{
+    float: left;
+    width: 400px;
+    height: 200px;
+    clear: both;
+    padding-left: 20px;
+    border: 1px solid black;
+    background: darkgrey;
+    border-radius: 8px;
+}
+.form h3{
+    padding-top: 25px;
+    padding-left: 200px;
+}
+.form{
+    float: left;
+    width: 500px;
+    height: 200px;
+    font-weight: 500;
+    margin-left: 100px;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+.form p{
+    float: left;
+    margin-left: 10px;
+    margin-top: 26px;
+}
+.one{
+    margin-left: 70px;
+}
+.two{
+    margin-left: 71px;
+}
+.three{
+    margin-left: 81px;
+}
+.sub{
+    height: 35px;
+    width: 100px;
+    font-weight: 400;
+    border-radius: 8px;
+    margin-right: 180px;
+    margin-top: 10px;
+}
+.sub:hover{
+    background: #3b83bc;
+    color: white;
+}
+.reg{
+    clear: both;
+    position: relative;
+    overflow: hidden;
+}
+.textOne,
+.textTwo,
+.textThree{
+    display: none;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: Arial, Tahoma, sans-serif;
+    width: 155px;
+    height: 38px;
+    border: transparent;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.75);
+}
