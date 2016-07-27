@@ -13,26 +13,26 @@ $(function(){
         //Task 2
     $('.one').hover(function(){
         var $count = $('.textOne');
-        $($count).slideToggle('slow');
+        $($count).show();
     // first input
     }, function(){
-        $('.textOne').slideToggle();
+        $('.textOne').hide();
     });
 
     $('.two').hover(function(){
         var $count = $('.textTwo');
-        $($count).slideToggle('slow');
+        $($count).show();
     //second input
     }, function(){
-        $('.textTwo').slideToggle();
+        $('.textTwo').hide();
     });
     //third input
     $('.three').hover(function(){
         var $count = $('.textThree');
-        $($count).slideToggle('slow');
+        $($count).show();
 
     }, function(){
-        $('.textThree').slideToggle();
+        $('.textThree').hide();
     });
     //onclick button
     $('.sub').on('click', function(){

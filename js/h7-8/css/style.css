@@ -56,7 +56,7 @@
 .form{
     float: left;
     width: 500px;
-    height: 200px;
+    height: 220px;
     font-weight: 500;
     margin-left: 100px;
     border: 3px solid black;
@@ -65,7 +65,7 @@
 .form p{
     float: left;
     margin-left: 10px;
-    margin-top: 26px;
+    margin-top: 30px;
 }
 .one{
     margin-left: 70px;
