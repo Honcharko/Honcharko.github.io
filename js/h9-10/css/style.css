@@ -1,0 +1,162 @@
+@import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
+
+body {
+    background: #F0EFE7;
+    margin: 0;
+    padding: 0;
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4E443C;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #4E443C;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2, h2 a {
+    color: #F14E32;
+}
+
+h3, h3 a {
+  color: #0388A6;
+}
+
+a {
+  color: #0388A6;
+}
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+    max-width: 620px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+.change{
+    margin: 20px 20px 20px 0;
+    width: 75px;
+    height: 120px;
+}
+.check {
+    float: left;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox.png);
+    margin-top: 6px;
+}
+.check input {
+    display: none;
+}
+.text{
+    float: left;
+    display: block;
+    padding-left: 10px;
+}
+label{
+    height: 15px;
+}
+.changeSecond{
+    display: block;
+    float: left;
+    margin-top: 20px;
+    width: 100px;
+    height: 120px;
+}
+input.second[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+label.lSecond {
+    margin-left: 8px;
+    cursor: pointer;
+}
+label.lSecond:after {
+    float: left;
+    content: " ";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../img/checkbox.png);
+    position: relative;
+    top: 5px;
+}
+input.second[type=checkbox]:checked + label.lSecond:after {
+    background-position: 0 -22px;
+}
+.animation{
+    clear: both;
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+}
+.animation p{
+    padding-top: 10px;
+}
+.menu {
+    width: 500px;
+}
+.menu li{
+    float: left;
+    list-style: none;
+    background: grey;
+}
+.menu li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    border-right: 1px solid darkgray;
+}
+.menu li a:hover{
+    background-color: lightblue;
+}
+.submenu li{
+    width: 85px;
+    height: 30px;
+    float: left;
+    list-style: none;
+    border-bottom: 1px solid darkgray;
+}
+.submenu li a{
+    padding: 0 10px;
+    margin-left: 0;
+    border-right: none;
+}
+.secSub{
+    display: block;
+    float: left;
+    margin-left: 45px;
+    position: absolute;
+    width: 50px;
+    margin-top: -31px;
+}
+.secSub{
+    opacity: 0;
+}
+.submenu{
+    opacity: 0;
+    margin-left: -35px;
+    height: 100px;
+    width: 71px;
+    line-height: 30px;
+}
+.menu .firstClick {
+    background: grey;
+    height: 22px;
+}

@@ -59,9 +59,8 @@ $(function() {
         $($menu).animate({
             opacity: '1'
         },500);
-            console.log($sub);
         $($sub).animate({
-            backgroundColor: 'wheat'
+            backgroundColor: 'red'
         },500);
     },
         function () {
