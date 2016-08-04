@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    text-align: center;
+    margin: 100px;
+}
+.carList{
+    list-style: none;
+    width: 100000px;
+    padding: 0;
+    position: relative;
+}
+.carElem{
+    float: left;
+    display: block;
+    margin-right: 25px;
+}
+.carElem img{
+    width: 600px;
+    height: 220px;
+}
+.carousel{
+    width: 600px;
+    overflow: hidden;
+    float: left;
+    height: 245px;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: wheat;
+}
+.carLeft,
+.carRight{
+    float: left;
+    display: block;
+    border: 1px solid dimgrey;
+    background: wheat;
+    padding: 5px;
+    margin-top: 110px;
+
+
+}
+.carLeft:hover,
+.carRight:hover{
+    background: greenyellow;
+    cursor: pointer;
+}
+.carLeft{
+    margin-right: 25px;
+}
+.carRight{
+    margin-left: 25px;
+}
+.new{
+    clear: both;
+    padding-top: 50px;
+}
+.new h1{
+    text-align: center;
+}
+.new p{
+    padding-left: 100px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.new span{
+    display: block;
+    padding-left: 50px;
+    line-height: 40px;
+}
