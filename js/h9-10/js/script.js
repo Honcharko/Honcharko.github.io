@@ -28,7 +28,7 @@ $(function() {
         var el = el,
             input = el.find("input").eq(0);
         if (!input.attr("checked")) {
-            el.css("background-position", "0 -22px");
+            el.css("background-position", "14px 0");
             input.attr("checked", true)
         } else {
             el.css("background-position", "0 0");
@@ -44,7 +44,7 @@ $(function() {
         var el = el,
             input = el.find("input").eq(0);
         if (input.attr("checked")) {
-            el.css("background-position", "0 -22px");
+            el.css("background-position", "14px 0");
         }
         return true;
     }
@@ -54,19 +54,19 @@ $(function() {
     var $menu = document.querySelector('.firstClick').childNodes[2];
     var $sub = document.querySelector('.firstClick').childNodes[2].getElementsByTagName('li');
     var $secMenu = document.querySelector('.secClick').childNodes[2];
+    var $a = document.querySelector('.firstClick').children[0];
 
-    $('.firstClick').hover(function () {
+
+    $($a).mouseover(function () {
         $($menu).animate({
             opacity: '1'
         },500);
         $($sub).animate({
             backgroundColor: 'red'
         },500);
-    },
-        function () {
-            $($menu).animate({
-                opacity: '0'
-            },500);
+        $($menu).mouseout(function(){
+            $menu.style.opacity = '0';
+        });
         });
 
     // second hover

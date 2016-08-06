@@ -54,11 +54,11 @@ pre {
 }
 .check {
     float: left;
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     display: inline-block;
     cursor: pointer;
-    background: url(../img/checkbox.png);
+    background: url(../img/%20check.png);
     margin-top: 6px;
 }
 .check input {
@@ -93,12 +93,12 @@ label.lSecond:after {
     display: inline-block;
     width: 14px;
     height: 14px;
-    background: url(../img/checkbox.png);
+    background: url(../img/%20check.png);
     position: relative;
     top: 5px;
 }
 input.second[type=checkbox]:checked + label.lSecond:after {
-    background-position: 0 -22px;
+    background-position: 14px 0;
 }
 .animation{
     clear: both;
@@ -151,6 +151,13 @@ input.second[type=checkbox]:checked + label.lSecond:after {
 }
 .submenu{
     opacity: 0;
+    margin-left: -35px;
+    height: 100px;
+    width: 71px;
+    line-height: 30px;
+}
+.submenuF{
+    opacity: 1;
     margin-left: -35px;
     height: 100px;
     width: 71px;
