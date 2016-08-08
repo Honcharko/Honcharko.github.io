@@ -110,60 +110,58 @@ input.second[type=checkbox]:checked + label.lSecond:after {
     padding-top: 10px;
 }
 .menu {
-    width: 500px;
+    width: 510px;
 }
 .menu li{
     float: left;
     list-style: none;
     background: grey;
-}
-.menu li a{
-    padding: 0 20px;
-    text-decoration: none;
-    color: #fff;
+    width: 100px;
+    line-height: 22px;
     border-right: 1px solid darkgray;
 }
-.menu li a:hover{
+.menu li a{
+    padding-right: 4px;
+    padding-left: 21px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 29px;
+}
+.menu li:hover{
     background-color: lightblue;
 }
-.submenu li{
-    width: 85px;
+.subMenu li{
+    width: 99px;
     height: 30px;
     float: left;
     list-style: none;
-    border-bottom: 1px solid darkgray;
 }
-.submenu li a{
+.subMenu li a{
     padding: 0 10px;
     margin-left: 0;
     border-right: none;
+    width: 100px;
 }
 .secSub{
-    display: block;
+    display: none;
     float: left;
-    margin-left: 45px;
+    margin-left: 60px;
+    line-height: 30px;
     position: absolute;
-    width: 50px;
-    margin-top: -31px;
+    width: 70px;
+    margin-top: -22px;
 }
-.secSub{
-    opacity: 0;
-}
-.submenu{
-    opacity: 0;
-    margin-left: -35px;
+.subMenu{
+    display: none;
     height: 100px;
-    width: 71px;
-    line-height: 30px;
-}
-.submenuF{
-    opacity: 1;
-    margin-left: -35px;
-    height: 100px;
-    width: 71px;
-    line-height: 30px;
+    width: 81px;
+    position: relative;
+    padding-left: 0;
+    padding-top: 0;
 }
 .menu .firstClick {
+    display: block;
     background: grey;
-    height: 22px;
+    height: 29px;
+    /*width: 120px;*/
 }

@@ -51,36 +51,32 @@ $(function() {
 
     //animation
 
-    var $menu = document.querySelector('.firstClick').childNodes[2];
-    var $sub = document.querySelector('.firstClick').childNodes[2].getElementsByTagName('li');
-    var $secMenu = document.querySelector('.secClick').childNodes[2];
-    var $a = document.querySelector('.firstClick').children[0];
+    var firstClick = document.querySelector('.firstClick');
+    var subMenu = document.querySelector('.subMenu');
+    var secondClick = document.querySelector('.secondClick');
+    var secSub = document.querySelector('.secSub');
 
 
-    $($a).mouseover(function () {
-        $($menu).animate({
-            opacity: '1'
-        },500);
-        $($sub).animate({
-            backgroundColor: 'red'
-        },500);
-        $($menu).mouseout(function(){
-            $menu.style.opacity = '0';
-        });
-        });
+    function mouseOver(){
+        subMenu.style.display = 'block';
+        function secMenu(){
+            secSub.style.display = 'block';
+        }
+        secondClick.addEventListener('mouseover', secMenu);
+    }
+    function mouseOut(){
+        subMenu.style.display = 'none';
+    }
+    function secondSub(){
+        secSub.style.display = 'none';
+    }
 
-    // second hover
-    $('.secClick').hover(function () {
-            $($secMenu).animate({
-                opacity: '1'
-            },500);
+    firstClick.addEventListener('mouseover', mouseOver);
 
-        },
-        function () {
-            $($secMenu).animate({
-                opacity: '0'
-            },500);
-        });
+    firstClick.addEventListener('mouseout', mouseOut);
 
+    secondClick.addEventListener('mouseout', secondSub);
 
 });
+
+
