@@ -58,7 +58,7 @@ pre {
     height: 14px;
     display: inline-block;
     cursor: pointer;
-    background: url(../img/%20check.png);
+    background: url(../img/cheks.png);
     margin-top: 6px;
 }
 .check input {
@@ -93,7 +93,7 @@ label.lSecond:after {
     display: inline-block;
     width: 14px;
     height: 14px;
-    background: url(../img/%20check.png);
+    background: url(../img/cheks.png);
     position: relative;
     top: 5px;
 }
