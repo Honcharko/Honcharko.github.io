@@ -2,7 +2,7 @@
 start.addEventListener('click', startClick);
 clear.addEventListener('click', clearClick);
 
-let count = 0, timerId, lap = false;
+var count = 0, timerId, lap = false;
 
 function startClick(){
     if(lap == false){
@@ -54,4 +54,4 @@ function clearClick(){
         start.style.backgroundColor = 'rgb(28, 184, 65)';
     }
 }
-})()
+})();

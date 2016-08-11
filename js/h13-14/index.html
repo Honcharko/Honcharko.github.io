@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 13-14</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+    <script type="text/tmpl" class="tmpl">
+            <%= for (var i=0; i < data.length; i++){ %>
+            <%= data[i].questions %>
+            <%= data[i].answers %>
+            <%= }; %>
+    </script>
+<script src="js/tmpl.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
