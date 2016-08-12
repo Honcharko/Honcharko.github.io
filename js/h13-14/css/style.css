@@ -2,3 +2,28 @@
     margin: 0;
     padding: 0;
 }
+.quest h3{
+    text-align: center;
+}
+.quest ul{
+    padding-left: 40px;
+    list-style: none;
+    line-height: 25px;
+    height: 50px;
+}
+.sub{
+    margin-top: 220px;
+    margin-left: 100px;
+}
+.sub button{
+    border: 1px solid wheat;
+    border-radius: 8px;
+    background-color: cadetblue;
+    color: white;
+    width: 200px;
+    height: 40px;
+}
+.sub button:hover{
+    background-color: yellowgreen;
+    color: green;
+}
