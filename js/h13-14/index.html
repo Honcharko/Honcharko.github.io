@@ -11,18 +11,18 @@
 <body>
 
     <script type="text/tmpl" class="tmpl">
-    <div class="quest">
+    <form class="quest">
     <ul>
     <h3><%= data.main %></h3>
     <% for (var i=0; i<data.questions.length; i++){ %>
     <li>№<%= i+1 %>  <%= data.questions[i]%></li>
     <ul>
     <% for(var q=0; q<data.answers[i].length; q++){  %>
-    <li id =a<%=i%><%=q%>><%= q+1 %>. <input type = checkbox name =a<%=i%>> <%= data.answers[i][q] %></li>
+    <li id= a<%=i%><%=q%>><%= q+1 %>. <input type = checkbox name =a<%=q%><%=i%>> <%= data.answers[i][q] %></li>
     <% };%>
     </ul>
     <% };%>
-    </div>
+    </form>
      <div class="sub">
     <button class="submit">Проверить мои результаты</button>
     </div>

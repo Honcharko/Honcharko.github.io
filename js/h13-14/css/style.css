@@ -12,7 +12,7 @@
     height: 50px;
 }
 .sub{
-    margin-top: 220px;
+    margin-top: 20px;
     margin-left: 100px;
 }
 .sub button{
@@ -27,3 +27,41 @@
     background-color: yellowgreen;
     color: green;
 }
+.window{
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    position: absolute;
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    margin: -230px 0 0 -300px;
+    background: ghostwhite;
+    box-shadow: #0d365a;
+    border-radius: 8px;
+
+}
+.window span{
+    line-height: 240px;
+}
+.reset{
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    margin-top: 170px;
+    margin-left: -170px;
+    border-radius: 8px;
+    background-color: yellowgreen;;
+    color: white;
+    font-weight: 400;
+}
+.window-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
