@@ -40,7 +40,7 @@ var test = {
         }
 
         //modal window
-        var window = function window(){
+        var result = function result(){
 
 
             var $modal = $('<div class = "window"><span> У вас '+ $cnt +' правильных (-й) ответов (-т)</span></div>');
@@ -63,7 +63,7 @@ var test = {
             $reset.addEventListener('click', reset);
         };
 
-        window();
+        result();
 
     });
 
