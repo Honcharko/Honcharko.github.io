@@ -1,21 +1,21 @@
-//$(function(){
-//    $('.find').on('click', function(e){
-//        e.preventDefault();
-//    var search = $('.search').val();
-//        $.ajax({
-//            url: 'https://pixabay.com/api/?key=3142717-b3a5d4dc1e97faa042535919f&q='+ search +'&image_type=photo',
-//            method: 'GET',
-//            dataType: 'jsonp',
-//            success: function(data){
-//                $.each(data.hits, function(i, hits){
-//                    $('<img>').attr('src', hits.previewURL).appendTo('.result');
-//                    if(i == 10){return  false}
-//                });
-//            },
-//            error: function(){alert('ajax query doesnt work')}
-//        })
-//    });
-//});
+$(function(){
+    $('.find').on('click', function(e){
+        e.preventDefault();
+    var search = $('.search').val();
+        $.ajax({
+            url: 'https://pixabay.com/api/?key=3142717-b3a5d4dc1e97faa042535919f&q='+ search +'&image_type=photo',
+            method: 'GET',
+            dataType: 'jsonp',
+            success: function(data){
+                $.each(data.hits, function(i, hits){
+                    $('<img>').attr('src', hits.previewURL).appendTo('.result');
+                    if(i == 10){return  false}
+                });
+            },
+            error: function(){alert('ajax query doesnt work')}
+        })
+    });
+});
 
 
 // Task 2
