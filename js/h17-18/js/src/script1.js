@@ -1,4 +1,4 @@
-$(function(){
-var test  = document.createElement('div').innerHTML = ' <h3> Its test task ONE </h3> ';
-$('body').append(test);
-});
+var testOne  = document.createElement("h3");
+var txtOne =document.createTextNode("Its test task ONE");
+testOne.appendChild(txtOne);
+document.body.appendChild(testOne);
