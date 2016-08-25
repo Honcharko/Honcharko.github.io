@@ -17,7 +17,6 @@ $(function(){
     });
 });
 
-
 // Task 2
 
 function Human(name, age, sex, height, weight){

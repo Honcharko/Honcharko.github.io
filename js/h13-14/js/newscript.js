@@ -39,24 +39,42 @@ $(function () {
     $($submit).on('click', function (e) {
         e.preventDefault();
         var counter = 0;
+        var user = [];
+
         var inputs = document.querySelectorAll('input');
 
         for (var i = 0; i < jsonTest.length; i++) {
             var test = jsonTest[i];
+            var answered = {};
             for (var q = 0; q < inputs.length; q++) {
                 if (!inputs[q].checked) continue;
+                var check = inputs[q].checked;
                 var parent = inputs[q].parentElement;
-                let question = parent.firstElementChild.innerHTML.slice(3);
+                var question = parent.firstElementChild.innerHTML.slice(3);
+
 
                 if (question != test.question) {
-                    continue
+                    continue;
                 } else {
-                    console.log(question);
-                    console.log(test.question);
+                    var right = test.right;
+                    console.log(right);
+                /*
+                 1.Создаем  var right = test.right;
+                 2.Проверяем нажатый инпут с  var right??
+                 3.Если есть совпадение то записываем ответ(цифру 1 в пустой массив  var user =[];)
+                 4. Подсчитываем количество ответов и выводим на модальное окно
+                */
+
                 }
+                if(right == check){
+                    answered[q] = true;
+
+                }
+                user.push(answered);
+
             }
         }
-         //modal window
+        //modal window
         var result = function result() {
 
 
@@ -86,6 +104,7 @@ $(function () {
 
 
 });
+
 
 
 
