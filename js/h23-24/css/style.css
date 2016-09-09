@@ -1,36 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.wrapper{
+
+.wrapper {
     margin: 100px;
 }
-.wrapper ul{
+
+.wrapper ul {
     list-style: none;
     line-height: 30px;
-    display: block;
+    display: flex;
+    flex-direction: column;  
     width: 200px;
     background: grey;
     border-radius: 8px;
 }
-.wrapper li{
+
+.wrapper li {
     color: white;
     padding-left: 10px;
     cursor: pointer;
+    display: flex;
+
 }
-.wrapper h3{
+
+
+.wrapper h3 {
     color: #1f6787;
     font-family: Arial, sans-serif;
 }
 
-.controlls{
+.controlls {
     margin-top: 10px;
 }
-.controlls input{
+
+.controlls input {
     width: 150px;
     height: 20px;
 }
-.controlls button{
+
+.controlls button {
     width: 85px;
     height: 25px;
     border-radius: 8px;
@@ -38,8 +49,8 @@
     background: green;
     border: none;
 }
-li input{
+
+li input {
     width: 60px;
     visibility: visible;
 }
-
