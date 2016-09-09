@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 100px;
+}
+.wrapper ul{
+    list-style: none;
+    line-height: 30px;
+    display: block;
+    width: 200px;
+    background: grey;
+    border-radius: 8px;
+}
+.wrapper li{
+    color: white;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.wrapper h3{
+    color: #1f6787;
+    font-family: Arial, sans-serif;
+}
+
+.controlls{
+    margin-top: 10px;
+}
+.controlls input{
+    width: 150px;
+    height: 20px;
+}
+.controlls button{
+    width: 85px;
+    height: 25px;
+    border-radius: 8px;
+    color: white;
+    background: green;
+    border: none;
+}
+li input{
+    width: 60px;
+    visibility: visible;
+}
+

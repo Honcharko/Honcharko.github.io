@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/template" id="wrapper-template">
+ <div class="wrapper">
+     <h3>Tech Skills:</h3>
+     <ul class="item-list"></ul>
+
+
+    <div class="controlls">
+        <input type="text" class="item-val">
+        <button class="item-add">Add skill</button>
+    </div>
+</div>
+</script>
+
+<script type="text/template" id="list-template">
+       <% for (var i = 0; i < data.length; i++) { %>
+       <li class="listItem"><%= (i+1) %>. <%= data[i] %>
+           <span data-item="<%= data[i] %>" class="item-del">&#10060;</span>
+          <input data-main="<%= data[i] %>" class="item-edit" type="text" value="">&#10003;
+       </li>
+
+       <% }; %>
+</script>
+</body>
+</html>
