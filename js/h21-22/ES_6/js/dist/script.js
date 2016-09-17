@@ -1,7 +1,18 @@
 'use strict';
 
 $(function () {
-    var test = [{
+    var test = void 0,
+        counter = void 0,
+        user = void 0,
+        inputs = void 0,
+        answered = void 0,
+        check = void 0,
+        parent = void 0,
+        question = void 0,
+        right = void 0,
+        $button = void 0,
+        $overlay = void 0;
+    test = [{
         question: 'Ваше имя :',
         answer: ['Петя', 'Вася'],
         right: 1
@@ -32,10 +43,10 @@ $(function () {
     //submit
     $($submit).on('click', function (e) {
         e.preventDefault();
-        var counter = 0;
-        var user = [];
+        counter = 0;
+        user = [];
 
-        var inputs = document.querySelectorAll('input');
+        inputs = document.querySelectorAll('input');
 
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;
@@ -45,30 +56,51 @@ $(function () {
             for (var _iterator = jsonTest[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                 var i = _step.value;
 
-                var test = i;
-                var answered = {};
-                for (var q = 0; q < inputs.length; q++) {
-                    if (!inputs[q].checked) continue;
-                    var check = inputs[q].checked;
-                    var parent = inputs[q].parentElement;
-                    var question = parent.firstElementChild.innerHTML.slice(3);
+                test = i;
+                answered = {};
+                var _iteratorNormalCompletion2 = true;
+                var _didIteratorError2 = false;
+                var _iteratorError2 = undefined;
 
-                    if (question != test.question) {
-                        continue;
-                    } else {
-                        var right = test.right;
-                        console.log(right);
-                        /*
-                         1.Создаем  var right = test.right;
-                         2.Проверяем нажатый инпут с  var right??
-                         3.Если есть совпадение то записываем ответ(цифру 1 в пустой массив  var user =[];)
-                         4. Подсчитываем количество ответов и выводим на модальное окно
-                        */
+                try {
+                    for (var _iterator2 = inputs[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                        var q = _step2.value;
+
+                        if (!q.checked) continue;
+                        check = q.checked;
+                        parent = q.parentElement;
+                        question = parent.firstElementChild.innerHTML.slice(3);
+
+                        if (question != test.question) {
+                            continue;
+                        } else {
+                            right = test.right;
+
+                            /*
+                             1.Создаем  var right = test.right;
+                             2.Проверяем нажатый инпут с  var right??
+                             3.Если есть совпадение то записываем ответ(цифру 1 в пустой массив  var user =[];)
+                             4. Подсчитываем количество ответов и выводим на модальное окно
+                            */
+                        }
+                        if (right == check) {
+                            q.answered = true;
+                        }
+                        user.push(answered);
                     }
-                    if (right == check) {
-                        answered[q] = true;
+                } catch (err) {
+                    _didIteratorError2 = true;
+                    _iteratorError2 = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                            _iterator2.return();
+                        }
+                    } finally {
+                        if (_didIteratorError2) {
+                            throw _iteratorError2;
+                        }
                     }
-                    user.push(answered);
                 }
             }
             //modal window
@@ -90,8 +122,8 @@ $(function () {
         var result = function result() {
             var $modal = arguments.length <= 0 || arguments[0] === undefined ? $('<div class = "window"><span> У вас ' + counter + ' правильных (-й) ответов (-т)</span></div>') : arguments[0];
 
-            var $button = $('<button class="reset">OK</button>');
-            var $overlay = $('<div class= "window-overlay">');
+            $button = $('<button class="reset">OK</button>');
+            $overlay = $('<div class= "window-overlay">');
 
             $('body').append($overlay);
             $('body').append($modal);

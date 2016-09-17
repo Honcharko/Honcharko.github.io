@@ -1,6 +1,7 @@
 
 $(function () {
-    var test = [
+    let test, counter, user, inputs, answered, check, parent, question, right, $button, $overlay;
+    test = [
         {
             question: 'Ваше имя :',
             answer: ['Петя', 'Вася'],
@@ -38,27 +39,27 @@ $(function () {
     //submit
     $($submit).on('click', function (e) {
         e.preventDefault();
-        var counter = 0;
-        var user = [];
+        counter = 0;
+        user = [];
 
-        var inputs = document.querySelectorAll('input');
+         inputs = document.querySelectorAll('input');
 
 
             for(let i of jsonTest){
-            var test = i;
-            var answered = {};
-            for (let q = 0; q < inputs.length; q++) {
-                if (!inputs[q].checked) continue;
-                var check = inputs[q].checked;
-                var parent = inputs[q].parentElement;
-                var question = parent.firstElementChild.innerHTML.slice(3);
+             test = i;
+             answered = {};
+            for (let q of inputs){
+                if (!q.checked) continue;
+                 check = q.checked;
+                 parent = q.parentElement;
+                 question = parent.firstElementChild.innerHTML.slice(3);
 
 
                 if (question != test.question) {
                     continue;
                 } else {
-                    var right = test.right;
-                    console.log(right);
+                    right = test.right;
+
                 /*
                  1.Создаем  var right = test.right;
                  2.Проверяем нажатый инпут с  var right??
@@ -68,7 +69,7 @@ $(function () {
 
                 }
                 if(right == check){
-                    answered[q] = true;
+                    q.answered = true;
 
                 }
                 user.push(answered);
@@ -76,9 +77,9 @@ $(function () {
             }
         }
         //modal window
-        let result = function result($modal = $('<div class = "window"><span> У вас ' + counter + ' правильных (-й) ответов (-т)</span></div>')) {
-             var $button = $('<button class="reset">OK</button>');
-             var $overlay = $('<div class= "window-overlay">');
+        let result = function ($modal = $('<div class = "window"><span> У вас ' + counter + ' правильных (-й) ответов (-т)</span></div>')) {
+              $button = $('<button class="reset">OK</button>');
+              $overlay = $('<div class= "window-overlay">');
 
 
             $('body').append($overlay);
@@ -92,6 +93,7 @@ $(function () {
                 $overlay.remove();
                 $('.quest')[0].reset();
             }
+
 
             $reset.addEventListener('click', reset);
         };
