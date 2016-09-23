@@ -2018,7 +2018,7 @@ var requirejs, require, define;
                 //Preserve dataMain in case it is a path (i.e. contains '?')
                 mainScript = dataMain;
 
-                //Set final baseUrl if there is not already an explicit one,
+                //Set exam baseUrl if there is not already an explicit one,
                 //but only do so if the data-main value is not a loader plugin
                 //module ID.
                 if (!cfg.baseUrl && mainScript.indexOf('!') === -1) {
