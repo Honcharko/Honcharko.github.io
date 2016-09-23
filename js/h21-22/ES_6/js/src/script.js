@@ -1,7 +1,13 @@
 
 $(function () {
-    let test, counter, user, inputs, answered, check, parent, question, right, $button, $overlay;
-    test = [
+    //variables
+    let counter = 0;
+    let user = [];
+    let inputs = document.querySelectorAll('input');
+    let answered = {};
+
+
+    let test = [
         {
             question: 'Ваше имя :',
             answer: ['Петя', 'Вася'],
@@ -39,22 +45,16 @@ $(function () {
     //submit
     $($submit).on('click', function (e) {
         e.preventDefault();
-        counter = 0;
-        user = [];
-
-         inputs = document.querySelectorAll('input');
-
 
             for(let i of jsonTest){
              test = i;
-             answered = {};
             for (let q of inputs){
+                let check = q.checked;
+                let parent = q.parentElement;
+                let question = parent.firstElementChild.innerHTML.slice(3);
+                let right;
+
                 if (!q.checked) continue;
-                 check = q.checked;
-                 parent = q.parentElement;
-                 question = parent.firstElementChild.innerHTML.slice(3);
-
-
                 if (question != test.question) {
                     continue;
                 } else {
@@ -77,10 +77,11 @@ $(function () {
             }
         }
         //modal window
-        let result = function ($modal = $('<div class = "window"><span> У вас ' + counter + ' правильных (-й) ответов (-т)</span></div>')) {
-              $button = $('<button class="reset">OK</button>');
-              $overlay = $('<div class= "window-overlay">');
-
+            function result () {
+               let $modal = $('<div class = "window"><span> У вас ' + counter + ' правильных (-й) ответов (-т)</span></div>');
+               let $button = $('<button class="reset">OK</button>');
+               let $overlay = $('<div class= "window-overlay">');
+               let $quest = $('.quest')[0];
 
             $('body').append($overlay);
             $('body').append($modal);
@@ -88,15 +89,11 @@ $(function () {
 
             let $reset = $('.reset')[0];
 
-            function reset() {
-                $modal.remove();
-                $overlay.remove();
-                $('.quest')[0].reset();
-            }
 
+            let reset = () => {$modal.remove(); $overlay.remove(); $quest.reset();};
 
             $reset.addEventListener('click', reset);
-        };
+        }
 
         result();
 

@@ -1,18 +1,13 @@
 'use strict';
 
 $(function () {
-    var test = void 0,
-        counter = void 0,
-        user = void 0,
-        inputs = void 0,
-        answered = void 0,
-        check = void 0,
-        parent = void 0,
-        question = void 0,
-        right = void 0,
-        $button = void 0,
-        $overlay = void 0;
-    test = [{
+    //variables
+    var counter = 0;
+    var user = [];
+    var inputs = document.querySelectorAll('input');
+    var answered = {};
+
+    var test = [{
         question: 'Ваше имя :',
         answer: ['Петя', 'Вася'],
         right: 1
@@ -43,10 +38,6 @@ $(function () {
     //submit
     $($submit).on('click', function (e) {
         e.preventDefault();
-        counter = 0;
-        user = [];
-
-        inputs = document.querySelectorAll('input');
 
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;
@@ -57,7 +48,6 @@ $(function () {
                 var i = _step.value;
 
                 test = i;
-                answered = {};
                 var _iteratorNormalCompletion2 = true;
                 var _didIteratorError2 = false;
                 var _iteratorError2 = undefined;
@@ -66,11 +56,12 @@ $(function () {
                     for (var _iterator2 = inputs[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
                         var q = _step2.value;
 
-                        if (!q.checked) continue;
-                        check = q.checked;
-                        parent = q.parentElement;
-                        question = parent.firstElementChild.innerHTML.slice(3);
+                        var check = q.checked;
+                        var parent = q.parentElement;
+                        var question = parent.firstElementChild.innerHTML.slice(3);
+                        var right = void 0;
 
+                        if (!q.checked) continue;
                         if (question != test.question) {
                             continue;
                         } else {
@@ -119,11 +110,11 @@ $(function () {
             }
         }
 
-        var result = function result() {
-            var $modal = arguments.length <= 0 || arguments[0] === undefined ? $('<div class = "window"><span> У вас ' + counter + ' правильных (-й) ответов (-т)</span></div>') : arguments[0];
-
-            $button = $('<button class="reset">OK</button>');
-            $overlay = $('<div class= "window-overlay">');
+        function result() {
+            var $modal = $('<div class = "window"><span> У вас ' + counter + ' правильных (-й) ответов (-т)</span></div>');
+            var $button = $('<button class="reset">OK</button>');
+            var $overlay = $('<div class= "window-overlay">');
+            var $quest = $('.quest')[0];
 
             $('body').append($overlay);
             $('body').append($modal);
@@ -131,14 +122,12 @@ $(function () {
 
             var $reset = $('.reset')[0];
 
-            function reset() {
-                $modal.remove();
-                $overlay.remove();
-                $('.quest')[0].reset();
-            }
+            var reset = function reset() {
+                $modal.remove();$overlay.remove();$quest.reset();
+            };
 
             $reset.addEventListener('click', reset);
-        };
+        }
 
         result();
     });
