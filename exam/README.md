@@ -1,31 +1,31 @@
-# h3**MY EXAM / PORTFOLIO PROJECT**
+## MY EXAM / PORTFOLIO PROJECT
 
 **Install : npm i**
 
 **Technologies:**
 
-              * HTML5 / CSS3;
+              - HTML5 / CSS3;
 
-              * BEM;
+              - BEM;
 
-              * Pixel Perfect (Chrome latest);
+              - Pixel Perfect (Chrome latest);
 
-              * Mobile-First Responsive Web Design;
+              - Mobile-First Responsive Web Design;
 
-              * Preprocessor SASS;
+              - Preprocessor SASS;
 
-              * Graceful degradation;
+              - Graceful degradation;
 
-              * Cross Browser (IE 8+);
+              - Cross Browser (IE 8+);
 
-              * Grunt;
+              - Grunt;
 
-              * jQuery;
+              - jQuery;
 
-              * JSONP;
+              - JSONP;
 
-              * Ajax;
+              - Ajax;
 
-              * Masonry.
+              - Masonry.
 
 
