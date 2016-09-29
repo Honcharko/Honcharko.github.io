@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Project</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="js/dist/script.main.js"></script>
-    <link rel="stylesheet" href="styles/styles.main.css">
+    <script src="src/public/script.main.js"></script>
+    <link rel="stylesheet" href="src/public/styles.main.css">
     <!--[if lt IE 8]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
-    <link rel="stylesheet" href="styles/IE8_styles.css"> -->
-
+    <link rel="stylesheet" href="src/public/IE8_styles.css"> -->
 </head>
 <body>
 <div class="wrapper">
@@ -31,6 +30,7 @@
           </form>
       </section>
   </header>
+    <article>
     <ul class="content">
         <li class="content__slider">
             <h2 class="content__text">How Urlaubsglück works?</h2>
@@ -38,21 +38,21 @@
                 <li class="content__item">
             <ul class="bxslider">
                 <li class="bxslider__one">
-                    <a href="#"><img src="./img/src/slide_one.png" /></a>
+                    <a href="#"><img src="src/img/src/slide_one.png" /></a>
                     <span class="bxslider__step">step 1</span>
                     <p class="bxslider__main">Sed leo enim, condimentum</p>
                     <span class="bxslider__text">Quisque libero libero, dictum non turpis in,
                         luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
                 </li>
                 <li class="bxslider__two">
-                    <a href="#"><img src="./img/src/slide_two.png" /></a>
+                    <a href="#"><img src="src/img/src/slide_two.png" /></a>
                     <span class="bxslider__step--sec">step 2</span>
                     <p class="bxslider__main--sec">Morbi velit risus</p>
                     <span class="bxslider__text--sec">Nulla venenatis tempor dui in molestie.
                         Nulla quis dictum purus, sit amet porttitor est.</span>
                 </li>>
                 <li class="bxslider__three">
-                    <a href="#"><img src="./img/src/slide_three.png" /></a>
+                    <a href="#"><img src="src/img/src/slide_three.png" /></a>
                     <span class="bxslider__step--th">step 3</span>
                     <p class="bxslider__main--th">Sed leo enim, condimentum</p>
                     <span class="bxslider__text--th">Quisque libero libero, dictum non turpis in,
@@ -65,21 +65,21 @@
                 <li class="content__item">
             <ul class="bxslider">
                 <li class="bxslider__two">
-                    <a href="#"><img src="./img/src/slide_two.png" /></a>
+                    <a href="#"><img src="src/img/src/slide_two.png" /></a>
                     <span class="bxslider__step--sec">step 2</span>
                     <p class="bxslider__main--sec">Morbi velit risus</p>
                     <span class="bxslider__text--sec">Nulla venenatis tempor dui in molestie.
                         Nulla quis dictum purus, sit amet porttitor est.</span>
                 </li>
                 <li class="bxslider__three">
-                    <a href="#"><img src="./img/src/slide_three.png" /></a>
+                    <a href="#"><img src="src/img/src/slide_three.png" /></a>
                     <span class="bxslider__step--th">step 3</span>
                     <p class="bxslider__main--th">Sed leo enim, condimentum</p>
                     <span class="bxslider__text--th">Quisque libero libero, dictum non turpis in,
                         luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
                 </li>
                 <li class="bxslider__one">
-                    <a href="#"><img src="./img/src/slide_one.png" /></a>
+                    <a href="#"><img src="src/img/src/slide_one.png" /></a>
                     <span class="bxslider__step">step 1</span>
                     <p class="bxslider__main">Sed leo enim, condimentum</p>
                     <span class="bxslider__text">Quisque libero libero, dictum non turpis in,
@@ -92,21 +92,21 @@
                 <li class="content__item">
             <ul class="bxslider">
                 <li class="bxslider__three">
-                    <a href="#"><img src="./img/src/slide_three.png" /></a>
+                    <a href="#"><img src="src/img/src/slide_three.png" /></a>
                     <span class="bxslider__step--th">step 3</span>
                     <p class="bxslider__main--th">Sed leo enim, condimentum</p>
                     <span class="bxslider__text--th">Quisque libero libero, dictum non turpis in,
                         luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
                 </li>
                 <li class="bxslider__one">
-                    <a href="#"><img src="./img/src/slide_one.png" /></a>
+                    <a href="#"><img src="src/img/src/slide_one.png" /></a>
                     <span class="bxslider__step">step 1</span>
                     <p class="bxslider__main">Sed leo enim, condimentum</p>
                     <span class="bxslider__text">Quisque libero libero, dictum non turpis in,
                         luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
                 </li>
                 <li class="bxslider__two">
-                    <a href="#"><img src="./img/src/slide_two.png" /></a>
+                    <a href="#"><img src="src/img/src/slide_two.png" /></a>
                     <span class="bxslider__step--sec">step 2</span>
                     <p class="bxslider__main--sec">Morbi velit risus</p>
                     <span class="bxslider__text--sec">Nulla venenatis tempor dui in molestie.
@@ -178,7 +178,7 @@
             <p class="search__quest">Hi! What are your holiday interests?</p>
             <form>
                 <input class="search__text" type="text" placeholder="Enter your interests">
-                <button class="search_click" formaction="/">Search partners</button>
+                <button class="search__click" formaction="/">Search partners</button>
             </form>
         </section>
     </article>

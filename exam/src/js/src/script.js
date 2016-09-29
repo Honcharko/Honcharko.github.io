@@ -12,11 +12,11 @@ $(function () {
     //masonry + ajax
 
     function box (){
-        let $grid = $('.grid');
+        var grid = $('.grid');
 
-        $grid.imagesLoaded(function () {
+        grid.imagesLoaded(function () {
 
-            $grid.masonry({
+            grid.masonry({
 
             itemSelector: '.grid__item',
                 columnWidth: 235,
@@ -28,15 +28,15 @@ $(function () {
 
     function find() {
         $('.holiday').find('div').remove();
-        let search = $('.search__text').val();
+        var search = $('.search__text').val();
         $.ajax({
             url: 'https://pixabay.com/api/?key=3142717-b3a5d4dc1e97faa042535919f&q=' + search + '&image_type=photo',
             method: 'GET',
             dataType: 'jsonp',
             success: function (data) {
-                let $html = $('#pictures').html();
-                let $content = tmpl($html, data);
-                $('.holiday').append($content);
+                var html = $('#pictures').html();
+                var content = tmpl(html, data);
+                $('.holiday').append(content);
                 box();
             },
             error: function () {
@@ -47,7 +47,7 @@ $(function () {
     }
     find();
 
-    $('.search_click').on('click', function (e) {
+    $('.search__click').on('click', function (e) {
         e.preventDefault();
         find();
     })

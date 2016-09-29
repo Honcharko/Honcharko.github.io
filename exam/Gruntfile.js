@@ -1,5 +1,4 @@
 module.exports = function(grunt) {
-    require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
 
     // Project configuration.
     grunt.initConfig({
@@ -11,32 +10,32 @@ module.exports = function(grunt) {
             },
             dist: {
                 // the files to concatenate
-                src: ['js/src/tmpl.js',
-                    'js/src/imagesloaded.pkgd.min.js',
-                     'js/src/jquery.bxslider.js',
-                     'js/src/masonry.pkgd.min.js',
-                     'js/src/script.es_5.js'],
+                src: ['src/js/src/tmpl.js',
+                    'src/js/src/imagesloaded.pkgd.min.js',
+                     'src/js/src/jquery.bxslider.js',
+                     'src/js/src/masonry.pkgd.min.js',
+                      'src/js/src/script.js'],
                 // the location of the resulting JS file
-                dest: 'js/dist/script.main.js'
+                dest: 'src/public/script.main.js'
             }
         },
         uglify: {
             dist: {
-                src: ['js/src/tmpl.js',
-                    'js/src/imagesloaded.pkgd.min.js',
-                     'js/src/jquery.bxslider.js',
-                     'js/src/masonry.pkgd.min.js',
-                     'js/src/script.es_5.js'],
-                dest: 'js/dist/script.main.min.js'
+                src: ['src/js/src/tmpl.js',
+                    'src/js/src/imagesloaded.pkgd.min.js',
+                     'src/js/src/jquery.bxslider.js',
+                     'src/js/src/masonry.pkgd.min.js',
+                     'src/js/src/script.js'],
+                dest: 'src/public/script.main.min.js'
             }
         },
         sass: {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: 'styles/src',
+                    cwd: 'src/styles/src',
                     src: ['*.scss'],
-                    dest: 'styles/dist',
+                    dest: 'src/styles/dist',
                     ext: '.css'
                 }]
             }
@@ -45,28 +44,24 @@ module.exports = function(grunt) {
             dynamic: {
                 files: [{
                     expand: true,
-                    cwd: 'img/src',
+                    cwd: 'src/img/src',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'img/dist'
+                    dest: 'src/public/img'
                 }]
             }
         },
         watch: {
             sass: {
                 // We watch and compile sass files as normal but don't live reload here
-                files: ['styles/src/*.scss'],
+                files: ['src/styles/src/*.scss'],
                 tasks: ['sass']
             },
             scripts: {
-                files: ['js/src/*.js'],
+                files: ['src/js/src/*.js'],
                 tasks: ['uglify', 'concat'],
                 options: {
                     spawn: false
                 }
-            },
-            babel: {
-                files: 'js/src/script.js',
-                tasks: ['babel']
             }
         },
         concat_css: {
@@ -74,24 +69,18 @@ module.exports = function(grunt) {
                 // Task-specific options go here.
             },
             all: {
-                src: ["styles/dist/reset.css", "styles/dist/*.css"],
-                dest: "styles/styles.main.css"
+                src: ["src/styles/dist/reset.css", "src/styles/dist/*.css"],
+                dest: "src/public/styles.main.css"
             },
         },
-        babel: {
+        postcss: {
             options: {
-                sourceMap: false,
-                presets: ['es2015']
+                map: true, // inline sourcemaps
+                processors: [ require('autoprefixer')({browsers: 'ie 8'})], // add vendor prefixes
             },
             dist: {
-                files: [{
-                    expand: true,
-                    cwd: 'js/src',
-                    src: ['script.js'],
-                    dest: 'js/src',
-                    ext: '.es_5.js',
-                    extDot: 'first'
-                }]
+                src: 'src/styles/src/IE8_styles.css',
+                dest: 'src/public/IE8_styles.css'
             }
         }
     });
@@ -103,8 +92,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-concat-css');
+    grunt.loadNpmTasks('grunt-postcss');
 
     // Default task(s).
-    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin', 'concat_css', 'babel']);
+    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin', 'concat_css', 'postcss']);
 
 };
