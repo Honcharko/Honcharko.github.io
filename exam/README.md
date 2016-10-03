@@ -1,6 +1,7 @@
 ## MY EXAM / PORTFOLIO PROJECT
 
 **Installation:**
+
                    - to build this repository you need to install sass globaly;
 
                    - grunt;
