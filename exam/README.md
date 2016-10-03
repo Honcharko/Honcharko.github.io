@@ -1,6 +1,10 @@
 ## MY EXAM / PORTFOLIO PROJECT
 
-**Install : npm i**
+**Installation :   - to build this repository you need to install sass globaly;
+                   - grunt;
+                   - npm i;
+                   - open index.html in browser.
+**
 
 **Technologies:**
 
