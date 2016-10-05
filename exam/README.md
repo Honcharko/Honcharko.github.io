@@ -1,4 +1,4 @@
-## MY Exam / PORTFOLIO PROJECT
+## MY EXAM / PORTFOLIO PROJECT
 
 **Installation:**
 
