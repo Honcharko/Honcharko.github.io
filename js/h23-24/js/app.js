@@ -22,10 +22,10 @@ require (
         'controller'
     ],
     function($, tmpl, Model, View, Controller){
-        var firstOpt = ['html', 'css', 'javascript', 'jquery', 'JSON'];
-        var model = new Model(firstOpt);
-        var view = new View(model);
-        var controller = new Controller(model, view);
+        let firstOpt = ['html', 'css', 'javascript', 'jquery', 'JSON'];
+        let model = new Model(firstOpt);
+        let view = new View(model);
+        let controller = new Controller(model, view);
     }
 
 );

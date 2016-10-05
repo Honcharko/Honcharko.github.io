@@ -1,7 +1,7 @@
 
 $(function () {
     //variables
-    let counter = 0;
+    let cnt = 0;
     let user = [];
     let inputs = document.querySelectorAll('input');
     let answered = {};
@@ -70,7 +70,7 @@ $(function () {
                 }
                 if(right == check){
                     q.answered = true;
-
+                    cnt++;
                 }
                 user.push(answered);
 
@@ -78,7 +78,7 @@ $(function () {
         }
         //modal window
             function result () {
-               let $modal = $('<div class = "window"><span> У вас ' + counter + ' правильных (-й) ответов (-т)</span></div>');
+               let $modal = $('<div class = "window"><span> У вас ' + cnt + ' правильных (-й) ответов (-т)</span></div>');
                let $button = $('<button class="reset">OK</button>');
                let $overlay = $('<div class= "window-overlay">');
                let $quest = $('.quest')[0];

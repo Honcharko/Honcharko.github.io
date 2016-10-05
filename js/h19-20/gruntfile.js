@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 // the files to concatenate
-                src: ['styles/variables.scss', 'styles/style.scss'],
+                src: ['styles/variables.scss', 'styles/mobile.scss'],
                 // the location of the resulting JS file
                 dest: 'styles/main.scss'
             }

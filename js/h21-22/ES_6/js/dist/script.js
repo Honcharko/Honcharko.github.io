@@ -2,7 +2,7 @@
 
 $(function () {
     //variables
-    var counter = 0;
+    var cnt = 0;
     var user = [];
     var inputs = document.querySelectorAll('input');
     var answered = {};
@@ -76,6 +76,7 @@ $(function () {
                         }
                         if (right == check) {
                             q.answered = true;
+                            cnt++;
                         }
                         user.push(answered);
                     }
@@ -111,7 +112,7 @@ $(function () {
         }
 
         function result() {
-            var $modal = $('<div class = "window"><span> У вас ' + counter + ' правильных (-й) ответов (-т)</span></div>');
+            var $modal = $('<div class = "window"><span> У вас ' + cnt + ' правильных (-й) ответов (-т)</span></div>');
             var $button = $('<button class="reset">OK</button>');
             var $overlay = $('<div class= "window-overlay">');
             var $quest = $('.quest')[0];

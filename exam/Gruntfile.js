@@ -16,7 +16,7 @@ module.exports = function(grunt) {
                      'src/js/src/masonry.pkgd.min.js',
                       'src/js/src/script.js'],
                 // the location of the resulting JS file
-                dest: 'src/public/script.main.js'
+                dest: 'public/script.main.js'
             }
         },
         uglify: {
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                      'src/js/src/jquery.bxslider.js',
                      'src/js/src/masonry.pkgd.min.js',
                      'src/js/src/script.js'],
-                dest: 'src/public/script.main.min.js'
+                dest: 'public/script.main.min.js'
             }
         },
         sass: {
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'src/img/src',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'src/public/img'
+                    dest: 'public/img'
                 }]
             }
         },
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
             },
             all: {
                 src: ["src/styles/dist/reset.css", "src/styles/dist/*.css"],
-                dest: "src/public/styles.main.css"
+                dest: "public/styles.main.css"
             },
         },
         postcss: {
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: 'src/styles/src/IE8_styles.css',
-                dest: 'src/public/IE8_styles.css'
+                dest: 'public/IE8_styles.css'
             }
         }
     });
@@ -95,6 +95,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-postcss');
 
     // Default task(s).
-    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin', 'concat_css', 'postcss']);
+    grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'concat_css', 'postcss']);
 
 };

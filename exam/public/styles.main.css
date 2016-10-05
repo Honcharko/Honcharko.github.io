@@ -48,22 +48,22 @@ table {
 }
 @font-face {
   font-family: 'Montserrat Bold';
-  src: url("../fonts/Montserrat-Bold.ttf") format("ttf"), url("../fonts/Montserrat-Bold.ttf") format("ttf");
+  src: url("../src/fonts/Montserrat-Bold.ttf") format("ttf"), url("../src/fonts/Montserrat-Bold.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Roboto Light';
-  src: url("../fonts/Roboto-Light.ttf") format("ttf"), url("../fonts/Roboto-Light.ttf") format("ttf");
+  src: url("../src/fonts/Roboto-Light.ttf") format("ttf"), url("../src/fonts/Roboto-Light.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Montserrat Regular';
-  src: url("../fonts/Montserrat-Regular.ttf") format("ttf"), url("../fonts/Montserrat-Regular.ttf") format("ttf");
+  src: url("../src/fonts/Montserrat-Regular.ttf") format("ttf"), url("../src/fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 @media (min-width: 960px) {
   body {
-    background: url("../img/src/desktop_pix.png") no-repeat;
+    background: url("../public/img/desktop_pix.png") no-repeat;
     background-position: top center; }
 
   .wrapper {
@@ -276,7 +276,7 @@ table {
       float: left;
       height: 118px;
       width: 120px;
-      background: url(img/peop_one.png) no-repeat;
+      background: url(../public/img/peop_one.png) no-repeat;
       margin-left: 85px;
       border-radius: 50%; }
     .content__one__icon, .content__two__icon, .content__three__icon, .content__four__icon {
@@ -284,7 +284,7 @@ table {
       width: 206px;
       float: right;
       height: 130px;
-      background: url(img/one.jpg) no-repeat;
+      background: url(../public/img/one.jpg) no-repeat;
       background-position: 168px 84px;
       position: absolute; }
     .content__desc {
@@ -362,7 +362,7 @@ table {
       margin-top: 33px;
       background: url("img/peop_two.png") no-repeat; }
     .content__two__icon {
-      background: url(img/two.png) no-repeat;
+      background: url(../public/img/two.png) no-repeat;
       background-position: 205px 116px;
       width: 280px;
       padding-top: 25px; }
@@ -370,14 +370,14 @@ table {
       margin-left: 95px;
       background: url("img/peop_three.png") no-repeat; }
     .content__three__icon {
-      background: url(img/three.png) no-repeat;
+      background: url(../public/img/three.png) no-repeat;
       background-position: 179px 85px;
       width: 220px; }
     .content__four__img {
       margin-left: 95px;
       background: url("img/peop_four.png") no-repeat; }
     .content__four__icon {
-      background: url(img/four.png) no-repeat;
+      background: url(../public/img/four.png) no-repeat;
       background-position: 179px 86px;
       width: 220px; }
     .content__four__name {
@@ -595,17 +595,17 @@ table {
 /*# sourceMappingURL=desktop.css.map */
 @font-face {
   font-family: 'Montserrat Bold';
-  src: url("../fonts/Montserrat-Bold.ttf") format("ttf"), url("../fonts/Montserrat-Bold.ttf") format("ttf");
+  src: url("../src/fonts/Montserrat-Bold.ttf") format("ttf"), url("../src/fonts/Montserrat-Bold.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Roboto Light';
-  src: url("../fonts/Roboto-Light.ttf") format("ttf"), url("../fonts/Roboto-Light.ttf") format("ttf");
+  src: url("../src/fonts/Roboto-Light.ttf") format("ttf"), url("../src/fonts/Roboto-Light.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Montserrat Regular';
-  src: url("../fonts/Montserrat-Regular.ttf") format("ttf"), url("../fonts/Montserrat-Regular.ttf") format("ttf");
+  src: url("../src/fonts/Montserrat-Regular.ttf") format("ttf"), url("../src/fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 
@@ -670,7 +670,7 @@ table {
 
 .bx-wrapper .bx-loading {
 	min-height: 50px;
-	background: url(img/bx_loader.gif) center center no-repeat #fff;
+	background: url(../public/img/bx_loader.gif) center center no-repeat #fff;
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -719,12 +719,12 @@ table {
 
 .bx-wrapper .bx-prev {
 	left: 3px;
-	background: url(img/new_controls.png) no-repeat 0 0;
+	background: url(../public/img/new_controls.png) no-repeat 0 0;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(img/new_controls.png) no-repeat -157px 0;
+	background: url(../public/img/new_controls.png) no-repeat -157px 0;
 }
 
 .bx-wrapper .bx-prev:hover {
@@ -762,7 +762,7 @@ table {
 	width: 10px;
 	height: 11px;
 	outline: 0;
-	background: url(img/controls.png) -86px -11px no-repeat;
+	background: url(../public/img/controls.png) -86px -11px no-repeat;
 	margin: 0 3px;
 }
 
@@ -777,7 +777,7 @@ table {
 	width: 9px;
 	height: 11px;
 	outline: 0;
-	background: url(img/controls.png) -86px -44px no-repeat;
+	background: url(../public/img/controls.png) -86px -44px no-repeat;
 	margin: 0 3px;
 }
 
@@ -818,17 +818,17 @@ table {
 }
 @font-face {
   font-family: 'Montserrat Bold';
-  src: url("../fonts/Montserrat-Bold.ttf") format("ttf"), url("../fonts/Montserrat-Bold.ttf") format("ttf");
+  src: url("../src/fonts/Montserrat-Bold.ttf") format("ttf"), url("../src/fonts/Montserrat-Bold.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Roboto Light';
-  src: url("../fonts/Roboto-Light.ttf") format("ttf"), url("../fonts/Roboto-Light.ttf") format("ttf");
+  src: url("../src/fonts/Roboto-Light.ttf") format("ttf"), url("../src/fonts/Roboto-Light.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Montserrat Regular';
-  src: url("../fonts/Montserrat-Regular.ttf") format("ttf"), url("../fonts/Montserrat-Regular.ttf") format("ttf");
+  src: url("../src/fonts/Montserrat-Regular.ttf") format("ttf"), url("../src/fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 @media (max-width: 479px) {
@@ -1022,7 +1022,7 @@ table {
     float: left;
     height: 118px;
     width: 120px;
-    background: url(img/peop_one.png) no-repeat;
+    background: url(../public/img/peop_one.png) no-repeat;
     margin-left: 85px;
     border-radius: 50%; }
   .content__one__icon, .content__two__icon, .content__three__icon, .content__four__icon {
@@ -1030,7 +1030,7 @@ table {
     width: 206px;
     float: right;
     height: 130px;
-    background: url(img/one.jpg) no-repeat;
+    background: url(../public/img/one.jpg) no-repeat;
     background-position: 168px 84px;
     position: absolute; }
   .content__desc {
@@ -1101,21 +1101,21 @@ table {
     margin-left: 97px;
     background: url("img/peop_two.png") no-repeat; }
   .content__two__icon {
-    background: url(img/two.png) no-repeat;
+    background: url(../public/img/two.png) no-repeat;
     background-position: 180px 84px;
     width: 220px; }
   .content__three__img {
     margin-left: 95px;
     background: url("img/peop_three.png") no-repeat; }
   .content__three__icon {
-    background: url(img/three.png) no-repeat;
+    background: url(../public/img/three.png) no-repeat;
     background-position: 179px 85px;
     width: 220px; }
   .content__four__img {
     margin-left: 95px;
     background: url("img/peop_four.png") no-repeat; }
   .content__four__icon {
-    background: url(img/four.png) no-repeat;
+    background: url(../public/img/four.png) no-repeat;
     background-position: 179px 86px;
     width: 220px; }
   .content__four__name {
@@ -1291,17 +1291,17 @@ table {
 /*# sourceMappingURL=mobile.css.map */
 @font-face {
   font-family: 'Montserrat Bold';
-  src: url("../fonts/Montserrat-Bold.ttf") format("ttf"), url("../fonts/Montserrat-Bold.ttf") format("ttf");
+  src: url("../src/fonts/Montserrat-Bold.ttf") format("ttf"), url("../src/fonts/Montserrat-Bold.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Roboto Light';
-  src: url("../fonts/Roboto-Light.ttf") format("ttf"), url("../fonts/Roboto-Light.ttf") format("ttf");
+  src: url("../src/fonts/Roboto-Light.ttf") format("ttf"), url("../src/fonts/Roboto-Light.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Montserrat Regular';
-  src: url("../fonts/Montserrat-Regular.ttf") format("ttf"), url("../fonts/Montserrat-Regular.ttf") format("ttf");
+  src: url("../src/fonts/Montserrat-Regular.ttf") format("ttf"), url("../src/fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 @media (min-width: 480px) and (max-width: 959px) {
@@ -1314,7 +1314,7 @@ table {
     height: 740px;
     width: 100%;
     display: block;
-    background: url("img/tablet.png") no-repeat; }
+    background: url("../public/img/tablet.png") no-repeat; }
 
   .find {
     width: 35%;
@@ -1512,7 +1512,7 @@ table {
       float: left;
       height: 118px;
       width: 120px;
-      background: url(img/peop_one.png) no-repeat;
+      background: url(../public/img/peop_one.png) no-repeat;
       margin-left: 85px;
       border-radius: 50%; }
     .content__one__icon, .contentt__two__icon, .content__three__icon, .content__four__icon {
@@ -1520,7 +1520,7 @@ table {
       width: 206px;
       float: right;
       height: 130px;
-      background: url(img/one.jpg) no-repeat;
+      background: url(../public/img/one.jpg) no-repeat;
       background-position: 168px 84px;
       position: absolute; }
     .content__desc {
@@ -1596,12 +1596,12 @@ table {
       margin-left: 121px;
       background: url("img/peop_two.png") no-repeat; }
     .contentt__two__icon {
-      background: url(img/two.png) no-repeat;
+      background: url(../public/img/two.png) no-repeat;
       background-position: 205px 84px;
       width: 280px; }
     .content__three__img {
       margin-left: 95px;
-      background: url("img/peop_three.png") no-repeat; }
+      background: url("../public/img/peop_three.png") no-repeat; }
     .content__three__icon {
       background: url(img/three.png) no-repeat;
       background-position: 179px 85px;
@@ -1610,7 +1610,7 @@ table {
       margin-left: 95px;
       background: url("img/peop_four.png") no-repeat; }
     .content__four__icon {
-      background: url(img/four.png) no-repeat;
+      background: url(../public/img/four.png) no-repeat;
       background-position: 179px 86px;
       width: 220px; }
     .content__four__name {
@@ -1810,6 +1810,6 @@ table {
       height: 40px;
       display: block;
       width: 109px;
-      background: url("img/footer_logo.png") no-repeat; } }
+      background: url("../public/img/footer_logo.png") no-repeat; } }
 
 /*# sourceMappingURL=tablet.css.map */

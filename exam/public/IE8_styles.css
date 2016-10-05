@@ -3,11 +3,11 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('img/header.gif');
+    background-image: url('../public/img/header.gif');
         background-size: cover;
         background-repeat: no-repeat;
         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-        src='../img/src/header.gif',
+        src='../public/img/header.gif',
         sizingMethod='scale');
    }
   .header {
@@ -37,7 +37,7 @@
     font-size: 14px;
     background: none;
     border-radius: 16px;
-    behavior: url('../styles/PIE/PIE.htc');
+    behavior: url('../src/styles/PIE/PIE.htc');
     color: #fff;
     border: transparent;
     cursor: pointer; }
@@ -91,7 +91,7 @@
     position: relative;
     width: 222px;
     border-radius: 16px;
-    behavior: url('../styles/PIE/PIE.htc');
+    behavior: url('../src/styles/PIE/PIE.htc');
     background: #ff4e50;
     border: none;
     cursor: pointer;
@@ -235,14 +235,14 @@
     float: left;
     height: 118px;
     width: 120px;
-    background-image: url('img/men.png');
+    background-image: url('../public/img/men.png');
         background-size: cover;
         background-repeat: no-repeat;
         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-        src='../img/src/men.gif',
+        src='../public/img/men.gif',
         sizingMethod='scale');
     margin-left: 85px;
-    behavior: url('../styles/PIE/PIE.htc');
+    behavior: url('../src/styles/PIE/PIE.htc');
     border-radius: 50%; }
 
   .content__one__icon, .content__two__icon, .content__three__icon, .content__four__icon {
@@ -250,11 +250,11 @@
     width: 206px;
     float: right;
     height: 130px;
-    background-image: url('img/one.jpg');
+    background-image: url('../public/img/one.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-        src='../img/src/one.jpg',
+        src='../public/img/one.jpg',
         sizingMethod='scale');
     background-position: 168px 84px;
     position: absolute; }
@@ -339,20 +339,20 @@
   .content__two__img {
     margin-left: 121px;
     margin-top: 33px;
-    background-image: url('img/peop_two.png');
+    background-image: url('../public/img/peop_two.png');
         background-size: cover;
         background-repeat: no-repeat;
         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-        src='../img/src/peop_two.png',
+        src='../public/img/peop_two.png',
         sizingMethod='scale');
       }
 
   .content__two__icon {
-    background-image: url('img/two.png');
+    background-image: url('../public/img/two.png');
         background-size: cover;
         background-repeat: no-repeat;
         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-        src='../img/src/two.png',
+        src='../public/src/two.png',
         sizingMethod='scale');
     background-position: 205px 116px;
     width: 280px;
@@ -360,20 +360,20 @@
 
   .content__three__img {
     margin-left: 95px;
-    background-image: url('img/peop_three.png');
+    background-image: url('../public/img/peop_three.png');
         background-size: cover;
         background-repeat: no-repeat;
         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-        src='../img/src/peop_three.png',
+        src='../public/img/peop_three.png',
         sizingMethod='scale');
    }
 
   .content__three__icon {
-    background-image: url('img/three.png');
+    background-image: url('../public/img/three.png');
         background-size: cover;
         background-repeat: no-repeat;
         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-        src='../img/src/three.png',
+        src='../public/img/three.png',
         sizingMethod='scale');
         padding-left: 230px;
     background-position: 179px 85px;
@@ -381,20 +381,20 @@
 
   .content__four__img {
     margin-left: 95px;
-    background-image: url('img/peop_four.png');
+    background-image: url('../public/img/peop_four.png');
         background-size: cover;
         background-repeat: no-repeat;
         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-        src='../img/src/peop_four.png',
+        src='../public/img/peop_four.png',
         sizingMethod='scale');
      }
 
   .content__four__icon {
-    background-image: url('img/four.png');
+    background-image: url('../public/img/four.png');
         background-size: cover;
         background-repeat: no-repeat;
         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-        src='../img/src/four.png',
+        src='../public/img/four.png',
         sizingMethod='scale');
     background-position: 179px 86px;
     width: 220px; }
@@ -621,11 +621,11 @@
     height: 40px;
     display: block;
     width: 109px;
-    background-image: url('img/footer_logo.png');
+    background-image: url('../public/img/footer_logo.png');
         background-size: cover;
         background-repeat: no-repeat;
         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-        src='../img/src/footer_logo.png',
+        src='../public/img/footer_logo.png',
         sizingMethod='scale');
    }
 

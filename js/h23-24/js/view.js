@@ -3,24 +3,23 @@ define(
     ['jquery'],
     function(){
         function View(model) {
-            var self = this;
 
-            function init() {
-                var wrapper = tmpl($('#wrapper-template').html());
+             let init = () => {
+                let wrapper = tmpl($('#wrapper-template').html());
                 $('body').append(wrapper);
 
-                self.elements = {
+                this.elements = {
                     input: $('.item-val'),
                     addBtn: $('.item-add'),
                     listContainer: $('.item-list')
                 };
 
-                self.renderList(model.data);
-            }
+                renderList(model.data);
+            };
 
-            self.renderList = function (data) {
-                var list = tmpl($('#list-template').html(), { data: data });
-                self.elements.listContainer.html(list);
+             let renderList = (data) => {
+                let list = tmpl($('#list-template').html(), { data: data });
+                this.elements.listContainer.html(list);
             };
             init();
         }

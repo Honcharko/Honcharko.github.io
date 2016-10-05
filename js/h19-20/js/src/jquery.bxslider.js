@@ -264,7 +264,7 @@
 			}else{
 				slider.settings.pager = false;
 			}
-			// preload all images, then perform final DOM / CSS modifications that depend on images being loaded
+			// preload all images, then perform exam DOM / CSS modifications that depend on images being loaded
 			loadElements(preloadSelector, start);
 		}
 
