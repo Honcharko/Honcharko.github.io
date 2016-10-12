@@ -1,32 +1,30 @@
 define(
     'controller', [],
-    () => class Controller {
-        constructor(model, view) {
-            this.data = data;
+    () => function Controller (model, view) {
+
 
             view.elements.addBtn.on('click', addItem);
             view.elements.listContainer.on('click', '.item-del', removeItem);
             view.elements.listContainer.on('blur', '.item-edit', editItem);
-        }
 
-             addItem () {
+
+            function addItem () {
                 let newItem = view.elements.input.val();
-                this.model.addItem(newItem);
-                this.view.renderList(model.data);
-                this.view.elements.input.val('');
-            };
-             removeItem () {
+                model.addItem(newItem);
+                view.renderList(model.data);
+                view.elements.input.val('');
+            }
+             function removeItem () {
                 let item = $(this).attr('data-item');
 
-                this.model.removeItem(item);
-                this.view.renderList(model.data);
-            };
+                model.removeItem(item);
+                view.renderList(model.data);
+            }
 
-             editItem (e) {
-                this.model.editItem(this.parentElement.innerText.trim(), e.target.value);
+             function editItem (e) {
+                model.editItem(this.parentElement.innerText.trim(), e.target.value);
 
-                this.view.renderList(model.data);
-            };
+                view.renderList(model.data);
+            }
     });
-
 

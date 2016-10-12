@@ -2,7 +2,7 @@ define(
     'view', ['jquery'],
     () => class View {
        constructor (model) {
-           this.data = data;
+           this.model = model;
            this.init();
     }
          init () {
@@ -24,5 +24,3 @@ define(
             };
 
     });
-
-
