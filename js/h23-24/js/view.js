@@ -1,10 +1,11 @@
 define(
-    'view',
-    ['jquery'],
-    function(){
-        function View(model) {
-
-             let init = () => {
+    'view', ['jquery'],
+    () => class View {
+       constructor (model) {
+           this.data = data;
+           this.init();
+    }
+         init () {
                 let wrapper = tmpl($('#wrapper-template').html());
                 $('body').append(wrapper);
 
@@ -14,15 +15,13 @@ define(
                     listContainer: $('.item-list')
                 };
 
-                renderList(model.data);
+                this.renderList(this.model.data);
             };
 
-             let renderList = (data) => {
+             renderList (data) {
                 let list = tmpl($('#list-template').html(), { data: data });
                 this.elements.listContainer.html(list);
             };
-            init();
-        }
-        return View;
-    }
-);
+
+    });
+

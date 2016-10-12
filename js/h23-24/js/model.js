@@ -1,44 +1,37 @@
 define(
-    'model',
-    [],
-    function(){
-        function Model(data) {
-
+    'model', [],
+    () => class Model {
+        constructor(data) {
             this.data = data;
+        }
 
-            this.addItem = function (item) {
-                if (item.length === 0) {
-                    return;
-                }
-                this.data.push(item);
+        addItem(item) {
+            if (item.length === 0) {
+                return;
+            }
+            this.data.push(item);
 
-                return this.data;
-            };
+            return this.data;
+        };
 
-            this.removeItem = function (item) {
-                let index = this.data.indexOf(item);
-                if (index === -1) {
-                    return;
-                }
-
-                this.data.splice(index, 1);
-
-                return this.data;
-            };
-
-            this.editItem = function (item, edit) {
-                let index = this.data.indexOf(item);
-                //console.log(index,edit,item, data);
-                if (index === -1) {
-                    return;
-                }
-
-                this.data.splice(index, 1, edit);
-
-                return this.data;
+        removeItem(item) {
+            let index = this.data.indexOf(item);
+            if (!~index) {
+                return;
             }
 
+            this.data.splice(index, 1);
+
+            return this.data;
+        };
+
+        editItem(item, edit) {
+            let index = this.data.indexOf(item);
+            if (!~index) {
+                return;
+            }
+            this.data.splice(index, 1, edit);
+            return this.data;
         }
-        return Model;
-    }
-);
+
+    });
